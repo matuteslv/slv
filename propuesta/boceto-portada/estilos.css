@@ -260,22 +260,23 @@ h1, h2, h3, p { margin: 0; }
 
 .hero {
   position: relative; isolation: isolate;
-  min-height: max(100svh, 640px);
   display: flex; flex-direction: column;
   color: var(--texto);
 }
-.hero__media { position: absolute; inset: 0; z-index: -1; overflow: hidden; background: #2A2A1B; }
-.hero__media picture, .hero__media img { width: 100%; height: 100%; }
-.hero__media img { object-fit: cover; object-position: 50% 30%; }
-.hero__media::after {
-  content: ""; position: absolute; inset: 0;
+.hero__media {
+  position: absolute; inset: 0; z-index: -1; overflow: hidden;
   background:
-    linear-gradient(180deg, rgba(15, 26, 19, 0.7) 0%, rgba(15, 26, 19, 0.6) 22%, rgba(15, 26, 19, 0.8) 48%, rgba(15, 26, 19, 0.92) 70%, #0F1A13 100%);
+    radial-gradient(50% 45% at 78% 38%, rgba(232, 178, 92, 0.16), transparent 70%),
+    radial-gradient(40% 40% at 10% 90%, rgba(82, 99, 55, 0.35), transparent 70%),
+    #0F1A13;
 }
+
+.hero__foto { position: relative; margin: 32px 0 0; border-radius: var(--r-l); overflow: hidden; background: #1F3024; }
+.hero__foto img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; object-position: 45% 45%; }
 .marcador-foto {
-  position: absolute; right: var(--margen); top: 70px; max-width: 260px;
-  padding: 8px 12px; border: 1px dashed rgba(253, 241, 219, 0.6); border-radius: var(--r-s);
-  background: rgba(6, 38, 54, 0.55);
+  position: absolute; left: 12px; top: 12px; max-width: calc(100% - 24px);
+  padding: 6px 10px; border: 1px dashed rgba(253, 241, 219, 0.6); border-radius: var(--r-s);
+  background: rgba(6, 38, 54, 0.72);
   font: 400 0.6875rem/1.45 var(--mono); letter-spacing: 0.04em; color: #FDF1DB;
 }
 .marcador-foto span { display: none; }
@@ -285,7 +286,7 @@ h1, h2, h3, p { margin: 0; }
   width: min(100% - 2 * var(--margen), var(--ancho)); margin-inline: auto;
   padding: 108px 0 28px;
 }
-.hero__texto { max-width: 800px; margin-top: auto; }
+.hero__texto { max-width: 800px; }
 .hero h1 { margin-top: 20px; font-size: clamp(2.375rem, 0.9rem + 4.4vw, 4.5rem); }
 .hero__bajada {
   margin-top: 20px; max-width: 36em;
@@ -389,7 +390,6 @@ h1, h2, h3, p { margin: 0; }
   .datos { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .datos li:nth-child(3) { border-left: 1px solid var(--linea); }
   .datos li:nth-child(n + 3) { border-top: 0; }
-  .marcador-foto { top: 92px; }
   .marcador-foto span { display: inline; }
 }
 @media (max-width: 420px) {
@@ -399,16 +399,26 @@ h1, h2, h3, p { margin: 0; }
   .pildora__opc { display: none; }
 }
 @media (min-width: 1080px) {
-  .hero__media img { object-position: 50% 50%; }
-  .hero__media::after {
-    background:
-      linear-gradient(90deg, rgba(15, 26, 19, 0.92) 0%, rgba(15, 26, 19, 0.72) 34%, rgba(15, 26, 19, 0.1) 62%, rgba(15, 26, 19, 0) 100%),
-      linear-gradient(180deg, rgba(15, 26, 19, 0.5) 0%, rgba(15, 26, 19, 0) 16%, rgba(15, 26, 19, 0) 70%, #0F1A13 100%);
+  .hero { min-height: max(100svh, 640px); }
+  .hero__in {
+    display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    column-gap: 48px; row-gap: 28px; align-content: center; padding-top: 112px;
   }
-  .hero__in { padding-top: 132px; }
-  .hero__texto { margin-top: 0; margin-bottom: auto; }
-  .hero__pie { grid-template-columns: minmax(0, 1fr) 340px; align-items: end; gap: 24px; min-height: 270px; margin-top: 32px; }
-  .datos { align-self: end; }
+  .hero__texto { grid-column: 1; grid-row: 1; align-self: center; margin: 0; }
+  .hero h1 { font-size: clamp(2.375rem, 1rem + 3.4vw, 4rem); }
+  .hero__foto { grid-column: 2; grid-row: 1; margin: 0; align-self: center; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35); }
+  .hero__foto img { aspect-ratio: 735 / 641; }
+  .hero__pie { display: contents; }
+  .datos { grid-column: 1; grid-row: 2; align-self: start; }
+  .ahora {
+    grid-column: 2; grid-row: 2; align-self: start;
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 20px; align-content: start;
+  }
+  .ahora__cab, .ahora__pie { grid-column: 1 / -1; }
+  .ahora .estado { grid-column: 1; }
+  .ahora__ventana { grid-column: 1; }
+  .ahora__filas { grid-column: 2; grid-row: 2 / span 2; margin-top: 12px; }
+  .bajar { grid-column: 1 / -1; grid-row: 3; margin-top: 4px; }
   .bajar { display: flex; }
 }
 

@@ -8,8 +8,7 @@
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#0F1A13">
 <link rel="preload" href="fuentes/manrope.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/foto-pendiente-movil.svg" as="image" media="(max-width: 1079px)" fetchpriority="high">
-<link rel="preload" href="img/foto-pendiente.svg" as="image" media="(min-width: 1080px)" fetchpriority="high">
+<link rel="preload" as="image" type="image/avif" href="img/portada-t50-735.avif" imagesrcset="img/portada-t50-480.avif 480w, img/portada-t50-735.avif 735w" imagesizes="(min-width: 1080px) 520px, calc(100vw - 32px)" fetchpriority="high">
 <script>try{var t=localStorage.getItem("agroatom-tema");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 <link rel="stylesheet" href="estilos.css">
 </head>
@@ -85,13 +84,7 @@
 <main id="contenido">
 
   <section class="hero" id="inicio" aria-labelledby="hero-titulo">
-    <div class="hero__media">
-      <picture>
-        <source media="(min-width: 1080px)" srcset="img/foto-pendiente.svg" width="1600" height="1000">
-        <img src="img/foto-pendiente-movil.svg" alt="" width="900" height="1500" fetchpriority="high">
-      </picture>
-      <p class="marcador-foto">[PENDIENTE: foto propia]<span> Piloto de espaldas con el control y el T50 pulverizando a contraluz, hora dorada.</span></p>
-    </div>
+    <div class="hero__media" aria-hidden="true"></div>
 
     <div class="hero__in">
       <div class="hero__texto">
@@ -109,6 +102,15 @@
           </button>
         </div>
       </div>
+
+      <figure class="hero__foto">
+        <picture>
+          <source type="image/avif" srcset="img/portada-t50-480.avif 480w, img/portada-t50-735.avif 735w" sizes="(min-width: 1080px) 520px, calc(100vw - 32px)">
+          <source type="image/webp" srcset="img/portada-t50-480.webp 480w, img/portada-t50-735.webp 735w" sizes="(min-width: 1080px) 520px, calc(100vw - 32px)">
+          <img src="img/portada-t50-735.jpg" srcset="img/portada-t50-480.jpg 480w, img/portada-t50-735.jpg 735w" sizes="(min-width: 1080px) 520px, calc(100vw - 32px)" width="735" height="641" alt="Drone DJI Agras T50 pulverizando un cultivo verde, con una línea de árboles al fondo" fetchpriority="high">
+        </picture>
+        <figcaption class="marcador-foto">Foto: DJI, solo para el boceto <span>[PENDIENTE: foto propia o permiso de DJI]</span></figcaption>
+      </figure>
 
       <div class="hero__pie">
         <ul class="datos" aria-label="El servicio en datos">
