@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="t">
+  <title id="t">AgroAtom</title>
+  <defs><clipPath id="c-icono"><circle cx="256" cy="256" r="218"/></clipPath></defs>
+  <circle cx="256" cy="256" r="218" fill="#FDF1DB"/>
+  <g clip-path="url(#c-icono)">
+    <path d="M0 352 C110 318 200 330 268 352 C350 378 430 360 512 330 V512 H0 Z" fill="#526337"/>
+    <path d="M-10 420 C100 386 190 398 268 422 C350 449 430 434 522 396" fill="none" stroke="#FDF1DB" stroke-width="16" stroke-linecap="round"/>
+  </g>
+  <circle cx="256" cy="256" r="231.0" fill="none" stroke="#062636" stroke-width="26"/>
+  <g transform="translate(256 236) scale(1.0) translate(-256 -226)">
+    <path d="M212 199 L148 187 M300 199 L364 187" fill="none" stroke="#062636" stroke-width="19" stroke-linecap="round"/>
+    <rect x="135" y="150" width="6" height="16" rx="2" fill="#062636"/>
+    <ellipse cx="138" cy="151" rx="50" ry="9.350000000000001" fill="#062636"/>
+    <rect x="371" y="150" width="6" height="16" rx="2" fill="#062636"/>
+    <ellipse cx="374" cy="151" rx="50" ry="9.350000000000001" fill="#062636"/>
+    <rect x="123" y="162" width="30" height="56" rx="9" fill="#FDF1DB" stroke="#062636" stroke-width="17"/>
+    <path d="M123 190 H153" stroke="#062636" stroke-width="10.2"/>
+    <rect x="359" y="162" width="30" height="56" rx="9" fill="#FDF1DB" stroke="#062636" stroke-width="17"/>
+    <path d="M359 190 H389" stroke="#062636" stroke-width="10.2"/>
+    <path d="M236 222 L218 296 M276 222 L294 296 M200 296 H234 M278 296 H312" fill="none" stroke="#062636" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M230 174 H282 L304 199 L284 226 H228 L208 199 Z" fill="#FDF1DB" stroke="#062636" stroke-width="17" stroke-linejoin="round"/>
+    <path d="M232 199 H280" stroke="#062636" stroke-width="10.2" stroke-linecap="round"/>
+    <rect x="242" y="226" width="28" height="18" rx="4" fill="#062636"/>
+  </g>
+</svg>
