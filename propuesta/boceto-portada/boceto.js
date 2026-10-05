@@ -50,7 +50,8 @@
   const pintarTema = () => {
     const claro = raiz.dataset.theme === "light";
     $$("[data-tema]").forEach((b) => b.setAttribute("aria-label", claro ? "Cambiar a modo oscuro" : "Cambiar a modo claro"));
-    $('meta[name="theme-color"]').content = claro ? "#F7F1E3" : "#0F1A13";
+    const meta = $('meta[name="theme-color"]');
+    if (meta) meta.content = claro ? "#F7F1E3" : "#0F1A13";
   };
   $$("[data-tema]").forEach((b) => b.addEventListener("click", () => {
     raiz.dataset.theme = raiz.dataset.theme === "light" ? "dark" : "light";
@@ -356,7 +357,7 @@
     hourly: "temperature_2m,relative_humidity_2m,wind_speed_10m,wind_direction_10m,wind_gusts_10m,precipitation,precipitation_probability",
   });
 
-  const muestra = new URLSearchParams(location.search).has("muestra");
+  const muestra = window.AGROATOM_FORZAR_MUESTRA === true || new URLSearchParams(location.search).has("muestra");
 
   const cargar = async () => {
     let datos;
