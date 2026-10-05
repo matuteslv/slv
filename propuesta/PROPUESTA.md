@@ -122,7 +122,7 @@ Resultado de la validación: separación para daltonismo ΔE 8,4 en oscuro y 9,7
 | Referencia (Zenze) | AgroAtom | En el boceto |
 |---|---|---|
 | Logo con hoja | Logo horizontal oscuro (en modo claro cambia solo a marino y oliva) | Sí |
-| Productor con tablet | El T50 pulverizando a contraluz al atardecer (tu pedido, con tus referencias). Después, la foto propia con el piloto de espaldas | Ilustración provisoria del T50 en 3D, con las proporciones oficiales |
+| Productor con tablet | Piloto de espaldas con el control y el T50 pulverizando a contraluz | Marcador con guía de encuadre |
 | Píldora "Smart solutions" | "Aplicación aérea con drones · Zárate y zona" | Sí |
 | Título en dos líneas | "Precisión en cada lote." / "Sin pisar el cultivo." en lima | Sí |
 | Dos botones | "Pedí tu cotización →" (WhatsApp) y "▶ Mirá cómo trabajamos" (video que carga recién al tocar) | Sí |
