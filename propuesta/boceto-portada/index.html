@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="es-AR" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boceto de portada · AgroAtom</title>
+<meta name="description" content="Boceto para aprobar: portada y tablero de clima para aplicar del sitio de AgroAtom.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0F1A13">
+<link rel="preload" href="fuentes/manrope.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/foto-pendiente-movil.svg" as="image" media="(max-width: 1079px)" fetchpriority="high">
+<link rel="preload" href="img/foto-pendiente.svg" as="image" media="(min-width: 1080px)" fetchpriority="high">
+<script>try{var t=localStorage.getItem("agroatom-tema");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-flecha" viewBox="0 0 24 24"><path d="M4.5 12h15M13.5 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.8v14.4a.8.8 0 0 0 1.2.7l11.3-7.2a.8.8 0 0 0 0-1.4L8.2 4.1A.8.8 0 0 0 7 4.8Z" fill="currentColor"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7.5h16M4 12h16M4 16.5h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-cerrar" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-luna" viewBox="0 0 24 24"><path d="M19.5 14.6A7.8 7.8 0 0 1 9.4 4.5a7.8 7.8 0 1 0 10.1 10.1Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-sol" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.8v2M12 19.2v2M2.8 12h2M19.2 12h2M5.5 5.5l1.4 1.4M17.1 17.1l1.4 1.4M5.5 18.5l1.4-1.4M17.1 6.9l1.4-1.4"/></g></symbol>
+    <symbol id="i-radar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5" stroke-opacity=".6"/><path d="M12 12 18.4 5.6"/></g><circle cx="12" cy="12" r="1.6" fill="currentColor"/></symbol>
+    <symbol id="i-tanque" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2c3.6 4.3 6.2 7.8 6.2 10.8a6.2 6.2 0 0 1-12.4 0c0-3 2.6-6.5 6.2-10.8Z"/><path d="M7.4 14.2c1.5.8 3 .8 4.6 0s3.1-.8 4.6 0" stroke-opacity=".7"/></g></symbol>
+    <symbol id="i-rinde" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.2 17.5a8.6 8.6 0 1 1 15.6 0"/><path d="M12 14.2 16.6 9"/><path d="M7 17.5h10" stroke-opacity=".6"/></g><circle cx="12" cy="14.4" r="1.5" fill="currentColor"/></symbol>
+    <symbol id="i-licencia" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><circle cx="8.6" cy="10.8" r="2.1"/><path d="M5.8 16c.6-1.4 1.6-2.1 2.8-2.1s2.2.7 2.8 2.1M14 10h4.2M14 13.4h3"/></g></symbol>
+    <symbol id="i-lote" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 7 12 3.5 20.5 7v10L12 20.5 3.5 17Z"/><path d="M7 9.5l10 4M7 13l7 3" stroke-opacity=".6"/></g></symbol>
+    <symbol id="i-viento" viewBox="0 0 24 24"><path d="M3 8.5h10.2a2.6 2.6 0 1 0-2.6-2.6M3 12.5h15.2a2.6 2.6 0 1 1-2.6 2.6M3 16.5h7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-temp" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M14 14.6V5.2a2 2 0 0 0-4 0v9.4a4 4 0 1 0 4 0Z"/><path d="M12 9v7.5"/></g></symbol>
+    <symbol id="i-gota" viewBox="0 0 24 24"><path d="M12 3.6c3.4 4 5.8 7.3 5.8 10.1a5.8 5.8 0 0 1-11.6 0c0-2.8 2.4-6.1 5.8-10.1Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-ok" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8 12.4 2.7 2.7L16.2 9.6"/></g></symbol>
+    <symbol id="i-prec" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.4 4.4a1.8 1.8 0 0 1 3.2 0l7.2 13a1.8 1.8 0 0 1-1.6 2.7H4.8a1.8 1.8 0 0 1-1.6-2.7Z"/><path d="M12 9.5v4"/></g><circle cx="12" cy="16.6" r="1.1" fill="currentColor"/></symbol>
+    <symbol id="i-no" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="m9 9 6 6M15 9l-6 6"/></g></symbol>
+    <symbol id="i-abajo" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<header class="nav" data-nav>
+  <div class="nav__in">
+    <a class="nav__logo" href="#inicio" aria-label="AgroAtom, aplicaciones aéreas. Ir al inicio"><svg class="logo" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 756.6 220"><g transform="scale(.42969)"><defs><clipPath id="logo-clip"><circle cx="256" cy="256" r="218"/></clipPath></defs><circle cx="256" cy="256" r="218" fill="#FDF1DB"/><g clip-path="url(#logo-clip)"><path fill="#526337" d="M0 352c110-34 200-22 268 0 82 26 162 8 244-22v182H0Z"/><path fill="none" stroke="#FDF1DB" stroke-linecap="round" stroke-width="16" d="M-10 420c110-34 200-22 278 2 82 27 162 12 254-26"/></g><circle cx="256" cy="256" r="231" fill="none" stroke="#062636" stroke-width="26"/><g transform="translate(0 10)"><path fill="none" stroke="#062636" stroke-linecap="round" stroke-width="19" d="m212 199-64-12m152 12 64-12"/><rect width="6" height="16" x="135" y="150" fill="#062636" rx="2"/><ellipse cx="138" cy="151" fill="#062636" rx="50" ry="9.4"/><rect width="6" height="16" x="371" y="150" fill="#062636" rx="2"/><ellipse cx="374" cy="151" fill="#062636" rx="50" ry="9.4"/><rect width="30" height="56" x="123" y="162" fill="#FDF1DB" stroke="#062636" stroke-width="17" rx="9"/><path stroke="#062636" stroke-width="10.2" d="M123 190h30"/><rect width="30" height="56" x="359" y="162" fill="#FDF1DB" stroke="#062636" stroke-width="17" rx="9"/><path stroke="#062636" stroke-width="10.2" d="M359 190h30"/><path fill="none" stroke="#062636" stroke-linecap="round" stroke-linejoin="round" stroke-width="17" d="m236 222-18 74m58-74 18 74m-94 0h34m44 0h34"/><path fill="#FDF1DB" stroke="#062636" stroke-linejoin="round" stroke-width="17" d="M230 174h52l22 25-20 27h-56l-20-27Z"/><path stroke="#062636" stroke-linecap="round" stroke-width="10.2" d="M232 199h48"/><rect width="28" height="18" x="242" y="226" fill="#062636" rx="4"/></g></g><path style="fill:var(--logo-agro)" d="m256 126 22-72h20.3l22 72h-14l-19.6-63.5h2.6L270 126Zm13.2-15V98.3h38V111Zm83.2 40.5q-4.6 0-8.7-1.5-4.2-1.4-7.5-4-3.2-2.7-5.3-6.2l12.6-6.1q1.3 2.4 3.7 3.7 2.5 1.2 5.3 1.2 3 0 5.8-1t4.3-3 1.5-5.1v-15.7h1.7V72h11.9v57.7q0 2-.2 3.8-.1 1.8-.6 3.5-1.3 5-4.8 8.1-3.6 3.3-8.6 4.8-5.1 1.6-11.1 1.6m-1.2-24q-7.4 0-13-3.7t-8.8-10.2-3.1-14.6q0-8.2 3.2-14.7t8.9-10.1 13.5-3.7 13 3.8 7.9 10.2 2.7 14.5-2.7 14.5-8.2 10.3-13.4 3.7m2.2-12.1q4.6 0 7.3-2 2.7-2.1 3.9-5.8t1.2-8.6-1.2-8.6-3.8-5.8-6.9-2q-4.5 0-7.5 2.2-2.9 2.3-4.3 6t-1.4 8.2 1.4 8.3 4.1 5.9 7.2 2.2m38.3 10.6V72h12v13.2l-1.3-1.7q1-2.8 2.8-5.1t4.3-3.8q2-1.2 4.3-1.9t4.7-.8 4.9.1v12.7q-2.2-.7-5.2-.5t-5.4 1.4-4 3-2.6 4.2-.8 5.6V126Zm64.5 1.5q-8.2 0-14.3-3.7-6.1-3.6-9.6-10-3.4-6.5-3.4-14.8 0-8.5 3.5-14.9t9.6-10 14.2-3.6 14.3 3.7q6.2 3.6 9.6 10 3.5 6.5 3.5 14.8t-3.5 14.8-9.6 10q-6.2 3.7-14.3 3.7m0-12.7q6.6 0 9.8-4.4t3.2-11.4q0-7.2-3.3-11.5t-9.7-4.3q-4.4 0-7.3 2t-4.2 5.5-1.4 8.3q0 7.3 3.3 11.5t9.6 4.3"/><path style="fill:var(--logo-atom)" d="m490.6 126 22-72h20.3l22 72h-14l-19.6-63.5h2.6L504.6 126Zm13.2-15V98.3h38V111Zm90.5 15q-5.6 1-11 1-5.4-.2-9.6-2-4.2-1.7-6.4-5.7-2-3.7-2.1-7.5l-.1-8.7V57h13.6v51q.1 2.5 1.1 4 1.8 2.8 5.8 3.1 3.9.3 8.7-.4Zm-38.4-43.5V72h38.4v10.5Zm71.7 45q-8.1 0-14.3-3.7-6.1-3.6-9.6-10-3.4-6.5-3.4-14.8 0-8.5 3.5-14.9t9.7-10 14.1-3.6q8.2 0 14.3 3.7 6.2 3.6 9.7 10T655 99t-3.5 14.8q-3.4 6.5-9.6 10-6.2 3.7-14.3 3.7m0-12.7q6.6 0 9.8-4.4t3.2-11.4q0-7.2-3.3-11.5t-9.7-4.3q-4.4 0-7.3 2t-4.2 5.5-1.4 8.3q0 7.3 3.3 11.5t9.6 4.3M731 126V94.1q0-5.3-2.5-8.3t-7-3q-2.9 0-5 1.3-2 1.3-3.2 3.7t-1.2 5.5l-5.7-3.8q0-5.6 2.6-9.8t7-6.6 9.9-2.4q9.3 0 14 5.5t4.7 14.3V126Zm-65.1 0V72h12v17.9h1.7V126Zm32.6 0V94.1q0-5.3-2.5-8.3t-7-3q-4.2 0-6.8 3-2.6 2.9-2.6 7.5l-5.7-4q0-5.3 2.6-9.5 2.7-4.2 7.2-6.7 4.4-2.4 10-2.4 6.3 0 10.4 2.7t6 7.2 2 9.9V126Z"/><path style="fill:var(--logo-sub)" d="m258.5 176 5.8-18.4h4.5l5.8 18.4h-3.2l-5.2-16.5h.7l-5.2 16.5Zm3.2-4v-2.9h9.7v3Zm20.4 4v-18.4h8.3l.7.1q1.6.3 2.7 1.1 1 .8 1.5 2 .5 1.3.5 2.8t-.5 2.8q-.5 1.2-1.5 2t-2.7 1l-.7.2h-5.2v6.4Zm3-9.3h5l.6-.1q.8-.2 1.2-.7l.6-1 .2-1.3-.2-1.2q-.2-.6-.6-1-.4-.6-1.2-.8h-5.5Zm18.7 9.3v-18.4h3v15.5h8.2v2.9Zm18.8 0v-18.4h3V176Zm19.9.4q-2.8 0-4.7-1.2t-3-3.4-1.1-5 1-5 3-3.3 4.8-1.2q3.2 0 5.3 1.5 2.1 1.6 3 4.3l-3.2.9q-.5-1.8-1.8-2.8t-3.3-1q-1.9 0-3 .8-1.3.8-2 2.3t-.6 3.5.6 3.5 1.9 2.4 3 .8q2.1 0 3.4-1t1.8-2.8l3.1.8q-.8 2.7-3 4.3-2 1.6-5.2 1.6m14.5-.4 5.8-18.4h4.5L373 176h-3.2l-5.3-16.5h.7l-5.2 16.5Zm3.2-4v-2.9h9.6v3Zm27.6 4.4q-2.8 0-4.7-1.2t-3-3.4-1-5 1-5 3-3.3 4.7-1.2q3.2 0 5.3 1.5 2.1 1.6 3 4.3l-3.1.9q-.6-1.8-1.9-2.8t-3.3-1q-1.8 0-3 .8-1.3.8-2 2.3t-.6 3.5.7 3.5 1.8 2.4q1.3.8 3.1.8 2 0 3.3-1t1.9-2.8l3 .8q-.8 2.7-3 4.3-2 1.6-5.2 1.6m16.5-.4v-18.4h3V176Zm19.9.4q-2.8 0-4.7-1.2t-3-3.4-1.1-5 1-5 3-3.3 4.8-1.2 4.7 1.2 3 3.3 1 5-1 5-3 3.4-4.7 1.2m0-3q1.8.1 3-.7 1.3-.9 2-2.4.5-1.5.5-3.5t-.6-3.5q-.6-1.5-1.8-2.3t-3.1-.8-3 .8-2 2.3q-.5 1.5-.6 3.5t.7 3.5q.6 1.5 1.8 2.3 1.2.9 3 .9m16.5 2.6v-18.4h3.1l8.6 13v-13h3V176h-3l-8.6-13v13Zm23.5 0v-18.4h11.9v3h-8.8v4.5h7.3v2.8h-7.3v5.2h8.8v2.9Zm26.8.4q-2 0-3.6-.7t-2.7-2-1.3-3.1l3.2-.5q.4 1.6 1.6 2.5 1.3 1 3 1 1 0 1.8-.4.9-.3 1.4-.9.6-.6.6-1.4 0-.4-.2-.7 0-.4-.3-.6l-.7-.5-.9-.4-4.7-1.4-1.3-.4q-.7-.3-1.4-.9-.6-.5-1-1.3t-.4-2q0-1.8.9-3t2.4-1.8 3.4-.6 3.4.6 2.4 1.9 1.4 2.9l-3.3.5q-.2-1-.7-1.6-.6-.7-1.5-1t-1.7-.4-1.7.2-1.3.8-.5 1.3.4 1.1l1 .7 1.3.4 3.3 1q.6 0 1.5.4.8.3 1.6.9.8.5 1.3 1.4t.5 2.3-.6 2.5q-.6 1-1.6 1.8-1 .7-2.3 1t-2.7.4m24.2-.4 5.8-18.4h4.5l5.8 18.4H528l-5.3-16.5h.7l-5.2 16.5Zm3.2-4v-2.9h9.6v3Zm27.8-16.3h-2.3l2-4.8h2.3Zm-7.4 20.3v-18.4h11.8v3h-8.8v4.5h7.3v2.8h-7.3v5.2h8.8v2.9Zm20 0v-18.4h8.3l.8.1q1.6.3 2.7 1.1 1 .8 1.5 2 .5 1.3.5 2.8 0 2.3-1.1 3.9t-3.5 2h-6.1v6.5Zm10.6 0-3.6-7.5 3.1-.7 4 8.2Zm-7.5-9.3h5l.6-.1q.8-.2 1.2-.7l.6-1 .2-1.3-.2-1.2q-.2-.6-.6-1-.4-.6-1.2-.8h-5.6Zm19 9.3v-18.4h11.9v3H584v4.5h7.2v2.8H584v5.2h8.8v2.9Zm18.8 0 5.8-18.4h4.5l5.8 18.4h-3.1l-5.3-16.5h.7l-5.2 16.5Zm3.3-4v-2.9h9.6v3Zm26.6 4.4q-2 0-3.6-.7t-2.7-2-1.3-3.1l3.2-.5q.4 1.6 1.7 2.5 1.2 1 2.9 1 1 0 1.8-.4 1-.3 1.5-.9t.5-1.4l-.1-.7-.4-.6-.6-.5-1-.4-4.7-1.4-1.3-.4q-.7-.3-1.4-.9-.6-.5-1-1.3t-.4-2q0-1.8 1-3 .8-1.2 2.3-1.8 1.6-.6 3.4-.6 2 0 3.4.6 1.5.7 2.5 1.9t1.4 2.9l-3.3.5q-.2-1-.8-1.6t-1.4-1-1.8-.4-1.7.2-1.3.8-.5 1.3.4 1.1l1 .7 1.3.4 3.3 1q.7 0 1.5.4.8.3 1.6.9.8.5 1.3 1.4t.5 2.3-.6 2.5q-.6 1-1.6 1.8-1 .7-2.3 1t-2.7.4"/></svg></a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#inicio" aria-current="true">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#tecnologia">Tecnología</a>
+      <a href="#clima">Clima</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#preguntas">Preguntas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="nav__acciones">
+      <a class="btn btn--lima btn--chico" href="#contacto" data-wa>Cotizá <svg aria-hidden="true"><use href="#i-flecha"/></svg></a>
+      <button class="icono-btn tema" type="button" data-tema aria-label="Cambiar a modo claro">
+        <svg class="icono-luna" aria-hidden="true"><use href="#i-luna"/></svg>
+        <svg class="icono-sol" aria-hidden="true"><use href="#i-sol"/></svg>
+      </button>
+      <button class="icono-btn menu" type="button" data-menu aria-expanded="false" aria-controls="menu-movil" aria-label="Abrir menú">
+        <svg aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="menu-movil" id="menu-movil" hidden>
+  <a href="#inicio">Inicio</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#tecnologia">Tecnología</a>
+  <a href="#clima">Clima para aplicar</a>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#preguntas">Preguntas</a>
+  <a href="#contacto">Contacto</a>
+  <a class="btn btn--lima" href="#contacto" data-wa>Pedí tu cotización por WhatsApp <svg aria-hidden="true"><use href="#i-flecha"/></svg></a>
+  <div class="menu-movil__tema">
+    <button class="icono-btn tema" type="button" data-tema aria-label="Cambiar a modo claro">
+      <svg class="icono-luna" aria-hidden="true"><use href="#i-luna"/></svg>
+      <svg class="icono-sol" aria-hidden="true"><use href="#i-sol"/></svg>
+    </button>
+    <span>Modo claro u oscuro</span>
+  </div>
+</div>
+
+<main id="contenido">
+
+  <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+    <div class="hero__media">
+      <picture>
+        <source media="(min-width: 1080px)" srcset="img/foto-pendiente.svg" width="1600" height="1000">
+        <img src="img/foto-pendiente-movil.svg" alt="" width="900" height="1500" fetchpriority="high">
+      </picture>
+      <p class="marcador-foto">[PENDIENTE: foto propia]<span> Piloto de espaldas con el control y el T50 pulverizando a contraluz, hora dorada.</span></p>
+    </div>
+
+    <div class="hero__in">
+      <div class="hero__texto">
+        <p class="pildora"><span class="pildora__punto" aria-hidden="true"></span>Aplicación <span class="pildora__opc">aérea </span>con drones · Zárate y zona</p>
+        <h1 class="titulo" id="hero-titulo">
+          <span>Precisión en cada lote.</span>
+          <span class="acento">Sin pisar el cultivo.</span>
+        </h1>
+        <p class="hero__bajada">Pulverizamos, fertilizamos y sembramos al voleo con DJI Agras T50, hasta 100 km de Zárate. Llegamos donde no entra el mosquito y aplicamos en el momento justo.</p>
+        <div class="hero__acciones">
+          <a class="btn btn--lima" href="#contacto" data-wa>Pedí tu cotización <svg aria-hidden="true"><use href="#i-flecha"/></svg></a>
+          <button class="btn-play" type="button" data-video>
+            <span class="btn-play__circulo" aria-hidden="true"><svg><use href="#i-play"/></svg></span>
+            Mirá cómo trabajamos
+          </button>
+        </div>
+      </div>
+
+      <div class="hero__pie">
+        <ul class="datos" aria-label="El servicio en datos">
+          <li><svg aria-hidden="true"><use href="#i-radar"/></svg><strong>100 km</strong><span>de cobertura desde Zárate</span></li>
+          <li><svg aria-hidden="true"><use href="#i-tanque"/></svg><strong>40 L</strong><span>de tanque en cada vuelo</span></li>
+          <li><svg aria-hidden="true"><use href="#i-rinde"/></svg><strong>21 ha/h</strong><span>máximo según DJI, en condiciones ideales</span></li>
+          <li><svg aria-hidden="true"><use href="#i-licencia"/></svg><strong>Licencia</strong><span>de piloto y habilitación provincial</span></li>
+          <li hidden data-hectareas><svg aria-hidden="true"><use href="#i-lote"/></svg><strong>[PENDIENTE] ha</strong><span>aplicadas desde septiembre de 2025</span></li>
+        </ul>
+
+        <aside class="ahora" aria-labelledby="ahora-t" data-ahora hidden>
+          <div class="ahora__cab">
+            <h2 class="ahora__titulo" id="ahora-t">Condiciones ahora</h2>
+            <span class="ahora__lugar">Lima, Zárate</span>
+          </div>
+          <p class="estado" data-estado="ok" data-ahora-estado>
+            <svg aria-hidden="true"><use href="#i-ok"/></svg><span>Buenas condiciones para aplicar</span>
+          </p>
+          <ul class="ahora__filas">
+            <li data-fila="viento"><span class="nombre"><svg aria-hidden="true"><use href="#i-viento"/></svg>Viento</span><span class="valor" data-v>--</span><span class="barra"><i></i></span></li>
+            <li data-fila="temp"><span class="nombre"><svg aria-hidden="true"><use href="#i-temp"/></svg>Temperatura</span><span class="valor" data-v>--</span><span class="barra"><i></i></span></li>
+            <li data-fila="hum"><span class="nombre"><svg aria-hidden="true"><use href="#i-gota"/></svg>Humedad</span><span class="valor" data-v>--</span><span class="barra"><i></i></span></li>
+          </ul>
+          <p class="ahora__ventana" data-ahora-ventana hidden></p>
+          <p class="ahora__pie"><span data-ahora-fuente>Pronóstico Open-Meteo</span><a href="#clima">Ver la ventana de aplicación</a></p>
+        </aside>
+      </div>
+
+      <a class="bajar" href="#clima"><span class="bajar__mouse" aria-hidden="true"></span>Bajá para explorar</a>
+    </div>
+  </section>
+
+  <section class="clima" id="clima" aria-labelledby="clima-t">
+    <svg class="lomas-deco" viewBox="0 0 520 220" fill="none" aria-hidden="true">
+      <g stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+        <path d="M0 90c90-28 165-18 230 2 68 22 135 10 290-36"/>
+        <path d="M0 122c90-28 165-18 230 2 68 22 135 10 290-36" stroke-opacity=".7"/>
+        <path d="M0 154c90-28 165-18 230 2 68 22 135 10 290-36" stroke-opacity=".45"/>
+        <path d="M0 186c90-28 165-18 230 2 68 22 135 10 290-36" stroke-opacity=".25"/>
+      </g>
+    </svg>
+    <div class="contenedor">
+      <header class="seccion-cab">
+        <p class="etiqueta">Clima para aplicar</p>
+        <h2 class="titulo" id="clima-t"><span>¿Hoy se puede aplicar?</span><span class="acento">Mirá la ventana en Lima.</span></h2>
+        <p>Cruzamos el pronóstico de viento, ráfagas, Delta T, temperatura, humedad y lluvia, hora por hora, y te mostramos cuándo conviene volar en las próximas 24 horas. Es una guía: antes de cada vuelo medimos en el lote y seguimos la receta.</p>
+      </header>
+
+      <div class="tablero is-cargando" data-tablero>
+        <div class="tablero__barra">
+          <span class="en-vivo">En vivo · Lima, Zárate</span>
+          <span data-actualizado>Actualizando…</span>
+        </div>
+
+        <div class="tablero__cuerpo">
+          <div class="panel">
+            <h3 class="panel__titulo">Ahora</h3>
+            <p class="estado estado--grande" data-estado="ok" data-estado-ahora>
+              <svg aria-hidden="true"><use href="#i-ok"/></svg>
+              <span><span data-estado-texto>Buenas condiciones para aplicar</span><span class="estado__detalle" data-estado-motivo></span></span>
+            </p>
+            <ul class="variables">
+              <li class="variable" data-var="viento" data-estado="ok">
+                <span class="variable__nombre">Viento <svg aria-hidden="true"><use href="#i-ok"/></svg></span>
+                <span class="variable__valor" data-v>--</span>
+                <span class="variable__nota" data-nota>--</span>
+                <svg class="brujula" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15" fill="none" stroke="currentColor" stroke-width="1"/><g class="flecha" data-flecha><path d="M17 6v22M12.5 23.5 17 28l4.5-4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+              </li>
+              <li class="variable" data-var="rafagas" data-estado="ok">
+                <span class="variable__nombre">Ráfagas <svg aria-hidden="true"><use href="#i-ok"/></svg></span>
+                <span class="variable__valor" data-v>--</span>
+                <span class="variable__nota">máximo en la hora</span>
+              </li>
+              <li class="variable variable--ancha" data-var="deltat" data-estado="ok">
+                <span class="variable__nombre">Delta T (evaporación de la gota) <svg aria-hidden="true"><use href="#i-ok"/></svg></span>
+                <span class="variable__valor" data-v>--</span>
+                <div class="medidor" aria-hidden="true">
+                  <span class="medidor__banda medidor__banda--ok" style="left:14.29%;width:42.86%"></span>
+                  <span class="medidor__banda medidor__banda--prec" style="left:57.14%;width:14.29%"></span>
+                  <span class="medidor__marca" data-marca></span>
+                </div>
+                <div class="medidor__escala" aria-hidden="true"><span>0</span><span>2</span><span>4</span><span>6</span><span>8</span><span>10</span><span>12</span><span>14 °C</span></div>
+                <span class="variable__nota">Ideal entre 2 y 8 °C</span>
+              </li>
+              <li class="variable" data-var="temp" data-estado="ok">
+                <span class="variable__nombre">Temperatura <svg aria-hidden="true"><use href="#i-ok"/></svg></span>
+                <span class="variable__valor" data-v>--</span>
+              </li>
+              <li class="variable" data-var="hum" data-estado="ok">
+                <span class="variable__nombre">Humedad <svg aria-hidden="true"><use href="#i-ok"/></svg></span>
+                <span class="variable__valor" data-v>--</span>
+              </li>
+              <li class="variable variable--ancha" data-var="lluvia" data-estado="ok">
+                <span class="variable__nombre">Lluvia en las próximas 3 h <svg aria-hidden="true"><use href="#i-ok"/></svg></span>
+                <span class="variable__valor" data-v>--</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3 class="panel__titulo">Próximas 24 horas</h3>
+            <div class="ventanas" data-ventanas aria-live="polite"></div>
+            <div class="grafico">
+              <p class="visualmente-oculto" id="grafico-desc">Barras por hora: la altura es el viento en km/h y el color es el estado para aplicar. Usá las flechas para recorrer las horas. Los mismos datos están en la tabla de abajo.</p>
+              <div class="grafico__area">
+                <div class="grafico__grilla" data-grilla></div>
+                <div class="barras" data-barras role="group" aria-label="Viento y estado por hora" aria-describedby="grafico-desc"></div>
+                <div class="tooltip" data-tooltip role="status"></div>
+              </div>
+              <div class="horas" data-horas aria-hidden="true"></div>
+              <div class="lluvias" data-lluvias aria-hidden="true"></div>
+              <span class="grafico__eje-lluvia" aria-hidden="true">lluvia</span>
+            </div>
+            <div class="leyenda" aria-label="Referencias">
+              <span data-estado="ok"><i></i>Buenas condiciones</span>
+              <span data-estado="prec"><i></i>Con precaución</span>
+              <span data-estado="no"><i></i>No conviene</span>
+              <span>Altura de la barra: viento en km/h</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tablero__pie">
+          <div class="desplegables">
+            <details class="desplegable">
+              <summary>Cómo lo calculamos <svg aria-hidden="true"><use href="#i-abajo"/></svg></summary>
+              <div class="desplegable__cuerpo">
+                <table class="criterios">
+                  <thead><tr><th scope="col">Variable</th><th scope="col">Buenas</th><th scope="col">Precaución</th><th scope="col">No conviene</th></tr></thead>
+                  <tbody>
+                    <tr><th scope="row">Viento</th><td>4 a 15 km/h</td><td>2 a 4 o 15 a 20 km/h</td><td>menos de 2 o más de 20 km/h</td></tr>
+                    <tr><th scope="row">Ráfagas</th><td>hasta 20 km/h</td><td>20 a 25 km/h</td><td>más de 25 km/h</td></tr>
+                    <tr><th scope="row">Delta T</th><td>2 a 8 °C</td><td>menos de 2 o 8 a 10 °C</td><td>más de 10 °C</td></tr>
+                    <tr><th scope="row">Temperatura</th><td>hasta 28 °C</td><td>28 a 32 °C</td><td>más de 32 °C</td></tr>
+                    <tr><th scope="row">Humedad</th><td>50 % o más</td><td>40 a 50 %</td><td>menos de 40 %</td></tr>
+                    <tr><th scope="row">Lluvia</th><td>menos de 30 % en 3 h</td><td>30 a 60 %</td><td>más de 60 % o lloviendo</td></tr>
+                  </tbody>
+                </table>
+                <p class="pendiente">[PENDIENTE: confirmar estos umbrales con ustedes y su asesor]</p>
+                <p style="margin-top:10px">Cada hora toma el peor estado de todas las variables. Delta T es la diferencia entre la temperatura del aire y la de bulbo húmedo: indica qué tan rápido se evapora la gota.</p>
+              </div>
+            </details>
+            <details class="desplegable">
+              <summary>Ver los datos en una tabla <svg aria-hidden="true"><use href="#i-abajo"/></svg></summary>
+              <div class="desplegable__cuerpo tabla-scroll" data-tabla></div>
+            </details>
+          </div>
+          <div class="tablero__cierre">
+            <p class="aviso">Guía orientativa con pronóstico para Lima, Zárate. En tu lote las condiciones pueden cambiar: antes de cada vuelo medimos viento, temperatura y humedad, y la decisión final es del aplicador junto con la receta agronómica.</p>
+            <a class="btn btn--lima" href="#contacto" data-wa>Reservá tu ventana <svg aria-hidden="true"><use href="#i-flecha"/></svg></a>
+          </div>
+          <p class="fuente" data-fuente>Datos: <a href="https://open-meteo.com/" rel="noopener">Open-Meteo.com</a> (CC BY 4.0), modelo de pronóstico para la zona.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<dialog class="dialogo" data-dialogo-video aria-labelledby="video-t">
+  <div class="dialogo__cab">
+    <h2 id="video-t" style="font-size:1rem">Cómo trabajamos</h2>
+    <button class="icono-btn" type="button" data-cerrar aria-label="Cerrar video"><svg aria-hidden="true"><use href="#i-cerrar"/></svg></button>
+  </div>
+  <div class="dialogo__video" data-video-cont>[PENDIENTE: video corto de una aplicación con el T50. Se carga recién cuando tocás el botón.]</div>
+</dialog>
+
+<script src="boceto.js" defer></script>
+</body>
+</html>
