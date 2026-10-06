@@ -274,17 +274,14 @@ h1, h2, h3, p { margin: 0; }
   color: var(--texto);
 }
 .hero__media { position: absolute; inset: 0; z-index: -1; overflow: hidden; background: linear-gradient(180deg, #0F1A13 0%, #1B2116 55%, #0F1A13 100%); }
-.hero__media .escena { display: none; width: 100%; height: 100%; }
-.escena .gota { animation: gota 1.5s linear infinite; }
-.escena .t50 { animation: flotar 6s ease-in-out infinite; }
-@keyframes gota { 0% { transform: translateY(-20px); opacity: 0; } 20% { opacity: 0.9; } 100% { transform: translateY(150px); opacity: 0; } }
-@keyframes flotar { 50% { transform: translateY(-6px); } }
+.hero__media picture, .hero__escena-movil picture { display: block; width: 100%; height: 100%; }
+.hero__media .escena { display: none; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%; }
 .hero__escena-movil {
   margin: 28px calc(-1 * var(--margen)) 0;
   -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 22%, #000 78%, transparent 100%);
   mask-image: linear-gradient(180deg, transparent 0, #000 22%, #000 78%, transparent 100%);
 }
-.hero__escena-movil .escena { width: 100%; height: auto; aspect-ratio: 900 / 620; }
+.hero__escena-movil .escena { display: block; width: 100%; height: auto; aspect-ratio: 740 / 510; object-fit: cover; }
 .hero__media::after {
   content: none; position: absolute; inset: 0;
   background:

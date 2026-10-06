@@ -1,6 +1,6 @@
 # Recorta el T50 de la foto (cielo claro detrás) con GrabCut + diferencia contra el fondo reconstruido.
 import sys, cv2, numpy as np
-# Uso: python3 recorte-t50.py foto.jpg salida.png
+# Uso: python3 recorte-t50.py foto.jpg salida.png [atardecer|natural]
 im = cv2.imread(sys.argv[1])
 X0, Y0, X1, Y1 = 105, 172, 535, 316
 c = im[Y0:Y1, X0:X1].copy()
@@ -31,7 +31,8 @@ cf, bf = c.astype(np.float32), B.astype(np.float32)
 A = np.maximum(a, 0.05)[..., None]
 F = np.clip((cf - (1 - A) * bf) / A, 0, 255)
 # 5) Clima de atardecer a contraluz: más oscuro y cálido (BGR)
-F = F * np.array([0.62, 0.74, 0.86]) * 0.92
+TONO = sys.argv[3] if len(sys.argv) > 3 else 'atardecer'
+F = F * (np.array([0.62, 0.74, 0.86]) * 0.92 if TONO == 'atardecer' else np.array([0.8, 0.8, 0.82]) * 0.8)
 out = np.dstack([F, a * 255]).astype(np.uint8)
 ys, xs = np.where(a > 0.05)
 bx0, by0, bx1, by1 = xs.min() - 4, ys.min() - 4, xs.max() + 5, ys.max() + 5
