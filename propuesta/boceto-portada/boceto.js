@@ -86,6 +86,86 @@
   $("[data-cerrar]", dialogo).addEventListener("click", () => dialogo.close());
   dialogo.addEventListener("click", (e) => { if (e.target === dialogo) dialogo.close(); });
 
+
+  /* ---------- WhatsApp ---------- */
+  // [PENDIENTE] número sin + ni espacios (por ejemplo 549348...). Mientras esté vacío, los botones llevan al formulario.
+  const WHATSAPP = "";
+  $$("[data-wa]").forEach((a) => {
+    if (!WHATSAPP) return;
+    const que = a.dataset.servicio || "una aplicación";
+    a.href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(`Hola AgroAtom, quiero cotizar ${que} para ___ ha de ___ en ___`)}`;
+    a.target = "_blank";
+    a.rel = "noopener";
+  });
+
+  /* ---------- Servicios: ver más ---------- */
+  $$(".servicio__abrir").forEach((b) => b.addEventListener("click", () => {
+    const abrir = b.getAttribute("aria-expanded") !== "true";
+    b.setAttribute("aria-expanded", String(abrir));
+    document.getElementById(b.getAttribute("aria-controls")).hidden = !abrir;
+  }));
+
+  /* ---------- Menú: marca la sección que se está viendo ---------- */
+  const enlaces = $$(".nav__links a");
+  const secciones = enlaces.map((a) => document.querySelector(a.getAttribute("href"))).filter(Boolean);
+  if ("IntersectionObserver" in window && secciones.length) {
+    const io = new IntersectionObserver((entradas) => entradas.forEach((e) => {
+      if (!e.isIntersecting) return;
+      enlaces.forEach((a) => a.toggleAttribute("aria-current", a.getAttribute("href") === `#${e.target.id}`));
+      enlaces.forEach((a) => { if (a.hasAttribute("aria-current")) a.setAttribute("aria-current", "true"); });
+    }), { rootMargin: "-45% 0px -50% 0px" });
+    secciones.forEach((s) => io.observe(s));
+  }
+
+  /* ---------- Tablero de misión: la ruta se dibuja al aparecer ---------- */
+  const mision = $(".mision");
+  if (mision && "IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    mision.classList.add("por-dibujar");
+    const io = new IntersectionObserver((entradas, obs) => {
+      if (!entradas[0].isIntersecting) return;
+      requestAnimationFrame(() => mision.classList.remove("por-dibujar"));
+      obs.disconnect();
+    }, { threshold: 0.3 });
+    io.observe(mision);
+  }
+
+  /* ---------- Formulario (sin destino todavía) ---------- */
+  const form = $("[data-form]");
+  if (form) {
+    const abierto = Date.now();
+    const estado = $("[data-form-estado]", form);
+    const avisar = (txt, ok) => { estado.textContent = txt; estado.className = `form__estado ${ok ? "is-ok" : "is-error"}`; };
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (form.web.value) return avisar("Gracias, recibimos tu consulta.", true); // campo trampa: un robot lo completa
+      if (Date.now() - abierto < 3000) return avisar("Revisá los datos y volvé a enviar.", false);
+      const faltan = ["nombre", "telefono", "localidad"].filter((n) => {
+        const campo = form[n];
+        const mal = n === "telefono" ? campo.value.replace(/\D/g, "").length < 8 : !campo.value.trim();
+        campo.setAttribute("aria-invalid", String(mal));
+        return mal;
+      });
+      if (faltan.length) {
+        form[faltan[0]].focus();
+        return avisar("Completá nombre, un teléfono con código de área y la localidad.", false);
+      }
+      avisar("Este formulario es de prueba y todavía no envía mensajes [PENDIENTE: a qué email llegan]. Mientras tanto, escribinos por WhatsApp.", false);
+    });
+  }
+
+  /* ---------- Botón flotante: no tapa la portada ni el contacto ---------- */
+  const flotante = $(".wa-flotante");
+  if (flotante && "IntersectionObserver" in window) {
+    const visibles = new Set();
+    const io = new IntersectionObserver((entradas) => {
+      entradas.forEach((e) => (e.isIntersecting ? visibles.add(e.target) : visibles.delete(e.target)));
+      flotante.classList.toggle("is-oculto", visibles.size > 0);
+    });
+    ["#inicio", "#contacto", ".pie"].forEach((s) => { const el = $(s); if (el) io.observe(el); });
+  }
+
+  $$("[data-anio]").forEach((el) => { el.textContent = new Date().getFullYear(); });
+
   /* ---------- Clima ---------- */
   const evaluarHora = (h) => {
     const dt = deltaT(h.temp, h.hum);
