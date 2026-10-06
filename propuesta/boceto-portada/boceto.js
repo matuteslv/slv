@@ -16,9 +16,9 @@
   };
   const PESO = { ok: 0, prec: 1, no: 2 };
   const TEXTO_ESTADO = {
-    ok: "Apto para aplicar",
+    ok: "Buenas condiciones para aplicar",
     prec: "Aplicar con precaución",
-    no: "No recomendado",
+    no: "No conviene aplicar",
   };
   const NOMBRE = { viento: "viento", rafagas: "ráfagas", deltat: "Delta T", temp: "temperatura", hum: "humedad", lluvia: "lluvia" };
   const ICONO = { ok: "#i-ok", prec: "#i-prec", no: "#i-no" };
@@ -80,6 +80,12 @@
   menu.addEventListener("click", (e) => { if (e.target.closest("a")) abrirMenu(false); });
   addEventListener("keydown", (e) => { if (e.key === "Escape" && !menu.hidden) { abrirMenu(false); botonMenu.focus(); } });
 
+  /* ---------- Video: se carga solo al tocar ---------- */
+  const dialogo = $("[data-dialogo-video]");
+  $("[data-video]").addEventListener("click", () => dialogo.showModal());
+  $("[data-cerrar]", dialogo).addEventListener("click", () => dialogo.close());
+  dialogo.addEventListener("click", (e) => { if (e.target === dialogo) dialogo.close(); });
+
 
   /* ---------- WhatsApp ---------- */
   const WHATSAPP = "5493487217345"; // +54 9 3487 21-7345
@@ -93,29 +99,21 @@
     a.rel = "noopener";
   });
 
-  /* ---------- Paneles que se abren: "Conocer la tecnología" y "Solicitar cotización" ---------- */
-  $$("[data-abrir]").forEach((b) => b.addEventListener("click", () => {
+  /* ---------- Servicios: ver más ---------- */
+  $$(".servicio__abrir").forEach((b) => b.addEventListener("click", () => {
     const abrir = b.getAttribute("aria-expanded") !== "true";
-    const panel = document.getElementById(b.getAttribute("aria-controls"));
     b.setAttribute("aria-expanded", String(abrir));
-    panel.hidden = !abrir;
-    if (abrir) {
-      const campo = panel.querySelector("input, select, textarea");
-      if (campo) campo.focus({ preventScroll: true });
-      panel.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "nearest" });
-    }
+    document.getElementById(b.getAttribute("aria-controls")).hidden = !abrir;
   }));
+
   /* ---------- Menú: marca la sección que se está viendo ---------- */
   const enlaces = $$(".nav__links a");
-  // Se miran todas las secciones: si la visible no está en el menú, no queda ninguna marcada
-  const secciones = $$("main > section[id]");
+  const secciones = enlaces.map((a) => document.querySelector(a.getAttribute("href"))).filter(Boolean);
   if ("IntersectionObserver" in window && secciones.length) {
     const io = new IntersectionObserver((entradas) => entradas.forEach((e) => {
       if (!e.isIntersecting) return;
-      enlaces.forEach((a) => {
-        if (a.getAttribute("href") === `#${e.target.id}`) a.setAttribute("aria-current", "true");
-        else a.removeAttribute("aria-current");
-      });
+      enlaces.forEach((a) => a.toggleAttribute("aria-current", a.getAttribute("href") === `#${e.target.id}`));
+      enlaces.forEach((a) => { if (a.hasAttribute("aria-current")) a.setAttribute("aria-current", "true"); });
     }), { rootMargin: "-45% 0px -50% 0px" });
     secciones.forEach((s) => io.observe(s));
   }
@@ -177,86 +175,18 @@
     });
   }
 
-  $$("[data-anio]").forEach((el) => { el.textContent = new Date().getFullYear(); });
-
-  /* ---------- Cómo funciona: evaluación, preparación, aplicación y control ---------- */
-  const funciona = $("[data-funciona]");
-  if (funciona && "IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    const pasos = $$(".funciona__paso", funciona);
-    const estado = $("[data-f-estado]", funciona);
-    const repetir = $("[data-f-repetir]", funciona);
-    const ruta = $(".f-ruta", funciona);
-    const hecha = $(".f-hecha", funciona);
-    const dron = $(".f-dron", funciona);
-    const cuerpo = $(".f-dron-cuerpo", funciona);
-    const largo = ruta.getTotalLength();
-    const TEXTOS = ["", "Evaluando el lote · 48 ha de soja", "Cargando el plan de vuelo", "Aplicando", "Lote completo · 100 % cubierto"];
-    let corriendo = false;
-
-    const fase = (n) => {
-      funciona.classList.toggle("f1", n >= 1);
-      funciona.classList.toggle("f2", n >= 2);
-      funciona.classList.toggle("f3", n === 3);
-      funciona.classList.toggle("f4", n >= 4);
-      pasos.forEach((p, i) => {
-        p.classList.toggle("is-activo", i === n - 1 && n < 4);
-        p.classList.toggle("is-hecho", i < n - 1 || n >= 4);
-      });
-      if (TEXTOS[n]) estado.textContent = TEXTOS[n];
-    };
-    const ubicar = (avance) => {
-      const d = Math.min(largo, avance * largo);
-      const p = ruta.getPointAtLength(d);
-      const q = ruta.getPointAtLength(Math.min(largo, d + 4));
-      const giro = Math.atan2(q.y - p.y, q.x - p.x) * 180 / Math.PI;
-      dron.setAttribute("transform", `translate(${p.x.toFixed(1)} ${p.y.toFixed(1)})`);
-      cuerpo.setAttribute("transform", `rotate(${giro.toFixed(0)})`);
-      hecha.style.strokeDashoffset = String(1 - avance);
-    };
-    const correr = () => {
-      if (corriendo) return;
-      corriendo = true;
-      repetir.hidden = true;
-      funciona.classList.add("anim");
-      hecha.style.strokeDashoffset = "1";
-      ubicar(0);
-      fase(0);
-      const espera = (ms) => new Promise((r) => setTimeout(r, ms));
-      requestAnimationFrame(async () => {
-        fase(1); await espera(1300);
-        fase(2); await espera(1300);
-        fase(3);
-        const DUR = 5200, t0 = performance.now();
-        await new Promise((listo) => {
-          const cuadro = (t) => {
-            const x = Math.min(1, (t - t0) / DUR);
-            const avance = x < 0.5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2;
-            ubicar(avance);
-            estado.textContent = `Aplicando · ${Math.round(avance * 100)} %`;
-            if (x < 1) requestAnimationFrame(cuadro); else listo();
-          };
-          requestAnimationFrame(cuadro);
-        });
-        await espera(300);
-        fase(4);
-        corriendo = false;
-        repetir.hidden = false;
-      });
-    };
-    // Estado inicial oculto hasta que la sección aparece en pantalla
-    funciona.classList.add("anim");
-    hecha.style.strokeDashoffset = "1";
-    estado.textContent = "Bajá para ver el ejemplo";
-    const io = new IntersectionObserver((entradas, obs) => {
-      if (!entradas[0].isIntersecting) return;
-      obs.disconnect();
-      correr();
-    }, { threshold: 0.45 });
-    io.observe(funciona);
-    repetir.addEventListener("click", correr);
-  } else if (funciona) {
-    $$(".funciona__paso", funciona).forEach((p) => p.classList.add("is-hecho"));
+  /* ---------- Botón flotante: no tapa la portada ni el contacto ---------- */
+  const flotante = $(".wa-flotante");
+  if (flotante && "IntersectionObserver" in window) {
+    const visibles = new Set();
+    const io = new IntersectionObserver((entradas) => {
+      entradas.forEach((e) => (e.isIntersecting ? visibles.add(e.target) : visibles.delete(e.target)));
+      flotante.classList.toggle("is-oculto", visibles.size > 0);
+    });
+    ["#inicio", "#contacto", ".pie"].forEach((s) => { const el = $(s); if (el) io.observe(el); });
   }
+
+  $$("[data-anio]").forEach((el) => { el.textContent = new Date().getFullYear(); });
 
   /* ---------- Clima ---------- */
   const evaluarHora = (h) => {
@@ -322,6 +252,35 @@
     el.dataset.estado = estado;
     const uso = $("use", el);
     if (uso) uso.setAttribute("href", ICONO[estado]);
+  };
+
+  const pintarPortada = ({ ahora, proximas }, fuente) => {
+    const tarjeta = $("[data-ahora]");
+    if (!tarjeta) return;
+    const est = $("[data-ahora-estado]", tarjeta);
+    pintarEstado(est, ahora.estado);
+    $("span", est).textContent = TEXTO_ESTADO[ahora.estado];
+    const filas = {
+      viento: [`${num(ahora.viento)} km/h ${punto(ahora.dir)}`, ahora.viento / 30, ahora.est.viento],
+      temp: [`${num(ahora.temp)} °C`, ahora.temp / 40, ahora.est.temp],
+      hum: [`${num(ahora.hum)} %`, ahora.hum / 100, ahora.est.hum],
+    };
+    Object.entries(filas).forEach(([k, [txt, v, e]]) => {
+      const fila = $(`[data-fila="${k}"]`, tarjeta);
+      $("[data-v]", fila).textContent = txt;
+      fila.dataset.estado = e;
+      $(".barra i", fila).style.setProperty("--v", Math.min(1, Math.max(0.02, v)));
+    });
+    const ventana = $("[data-ahora-ventana]", tarjeta);
+    const [primero] = tramosBuenos(proximas);
+    if (primero) {
+      const fuerte = document.createElement("strong");
+      fuerte.textContent = textoTramo(primero, proximas);
+      ventana.replaceChildren(document.createTextNode(primero[0] === 0 ? "Buena ventana ahora: " : "Próxima ventana buena: "), fuerte);
+      ventana.hidden = false;
+    }
+    $("[data-ahora-fuente]", tarjeta).replaceChildren(document.createTextNode(fuente));
+    tarjeta.hidden = false;
   };
 
   const pintarTablero = ({ ahora, proximas }, actualizado, muestra) => {
@@ -486,11 +445,11 @@
   const errorTablero = () => {
     const tablero = $("[data-tablero]");
     tablero.classList.remove("is-cargando");
-    $$(".clima-ahora, .clima-mas", tablero).forEach((el) => { el.hidden = true; });
+    const cuerpo = $(".tablero__cuerpo", tablero);
     const p = document.createElement("p");
     p.className = "tablero__error";
-    p.textContent = "No pudimos cargar el pronóstico en este momento. En el lote medimos las condiciones antes de cada vuelo.";
-    $(".tablero__barra", tablero).after(p);
+    p.textContent = "No pudimos cargar el pronóstico en este momento. Escribinos y te pasamos las condiciones para tu lote.";
+    cuerpo.replaceWith(p);
     $("[data-actualizado]", tablero).textContent = "Sin datos";
   };
 
@@ -518,6 +477,7 @@
     const listo = normalizar(datos);
     if (!listo.proximas.length) throw new Error("sin horas");
     const hora = datos.current.time.slice(11, 16);
+    pintarPortada(listo, muestra ? "Datos de muestra" : `Open-Meteo · ${hora}`);
     pintarTablero(listo, `Actualizado ${hora}`, muestra);
   };
 

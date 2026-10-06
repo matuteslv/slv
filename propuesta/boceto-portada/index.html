@@ -16,11 +16,16 @@
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
   <defs>
     <symbol id="i-flecha" viewBox="0 0 24 24"><path d="M4.5 12h15M13.5 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.8v14.4a.8.8 0 0 0 1.2.7l11.3-7.2a.8.8 0 0 0 0-1.4L8.2 4.1A.8.8 0 0 0 7 4.8Z" fill="currentColor"/></symbol>
     <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7.5h16M4 12h16M4 16.5h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
     <symbol id="i-cerrar" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
     <symbol id="i-luna" viewBox="0 0 24 24"><path d="M19.5 14.6A7.8 7.8 0 0 1 9.4 4.5a7.8 7.8 0 1 0 10.1 10.1Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
     <symbol id="i-sol" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.8v2M12 19.2v2M2.8 12h2M19.2 12h2M5.5 5.5l1.4 1.4M17.1 17.1l1.4 1.4M5.5 18.5l1.4-1.4M17.1 6.9l1.4-1.4"/></g></symbol>
+    <symbol id="i-radar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5" stroke-opacity=".6"/><path d="M12 12 18.4 5.6"/></g><circle cx="12" cy="12" r="1.6" fill="currentColor"/></symbol>
+    <symbol id="i-tanque" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2c3.6 4.3 6.2 7.8 6.2 10.8a6.2 6.2 0 0 1-12.4 0c0-3 2.6-6.5 6.2-10.8Z"/><path d="M7.4 14.2c1.5.8 3 .8 4.6 0s3.1-.8 4.6 0" stroke-opacity=".7"/></g></symbol>
+    <symbol id="i-rinde" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.2 17.5a8.6 8.6 0 1 1 15.6 0"/><path d="M12 14.2 16.6 9"/><path d="M7 17.5h10" stroke-opacity=".6"/></g><circle cx="12" cy="14.4" r="1.5" fill="currentColor"/></symbol>
     <symbol id="i-licencia" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><circle cx="8.6" cy="10.8" r="2.1"/><path d="M5.8 16c.6-1.4 1.6-2.1 2.8-2.1s2.2.7 2.8 2.1M14 10h4.2M14 13.4h3"/></g></symbol>
+    <symbol id="i-lote" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 7 12 3.5 20.5 7v10L12 20.5 3.5 17Z"/><path d="M7 9.5l10 4M7 13l7 3" stroke-opacity=".6"/></g></symbol>
     <symbol id="i-viento" viewBox="0 0 24 24"><path d="M3 8.5h10.2a2.6 2.6 0 1 0-2.6-2.6M3 12.5h15.2a2.6 2.6 0 1 1-2.6 2.6M3 16.5h7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
     <symbol id="i-temp" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M14 14.6V5.2a2 2 0 0 0-4 0v9.4a4 4 0 1 0 4 0Z"/><path d="M12 9v7.5"/></g></symbol>
     <symbol id="i-gota" viewBox="0 0 24 24"><path d="M12 3.6c3.4 4 5.8 7.3 5.8 10.1a5.8 5.8 0 0 1-11.6 0c0-2.8 2.4-6.1 5.8-10.1Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
@@ -29,20 +34,25 @@
     <symbol id="i-no" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="m9 9 6 6M15 9l-6 6"/></g></symbol>
     <symbol id="i-abajo" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
     <symbol id="i-pulverizar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 6.5h5M15.5 6.5h5M6 6.5v2M18 6.5v2M6 8.5h12M10 8.5l.8 3h2.4l.8-3"/><path d="M8 15.5v1.5M12 14.5v3M16 15.5v1.5M10 19.5v1M14 19.5v1"/></g></symbol>
+    <symbol id="i-foliar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5C4.5 11 9.5 6 19.5 4.5 18 14 13 19 4.5 19.5Z"/><path d="M4.5 19.5 12 12"/><path d="M17 15.5c1.4 1.7 2.2 2.9 2.2 3.8a2.2 2.2 0 0 1-4.4 0c0-.9.8-2.1 2.2-3.8Z"/></g></symbol>
+    <symbol id="i-granulado" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7.5 3.5h9l-2.5 6h-4Z"/></g><g fill="currentColor"><circle cx="8" cy="14" r="1.2"/><circle cx="12" cy="13" r="1.2"/><circle cx="16" cy="14" r="1.2"/><circle cx="6" cy="18" r="1.2"/><circle cx="10" cy="17.5" r="1.2"/><circle cx="14" cy="17.5" r="1.2"/><circle cx="18" cy="18" r="1.2"/><circle cx="12" cy="21" r="1.2"/></g></symbol>
+    <symbol id="i-semilla" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.5v-8"/><path d="M12 12.5c0-3.6 2.4-6 6-6 0 3.6-2.4 6-6 6Z"/><path d="M12 15c0-3-2-5-5-5 0 3 2 5 5 5Z"/><path d="M5 20.5h14"/></g></symbol>
     <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
     <symbol id="i-mapa" viewBox="0 0 24 24"><path d="M3.5 6.5 9 4l6 2.5 5.5-2.5v13.5L15 20l-6-2.5-5.5 2.5ZM9 4v13.5M15 6.5V20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
     <symbol id="i-ruta" viewBox="0 0 24 24"><path d="M5 5h14v4.5H5V14h14v4.5H6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
     <symbol id="i-receta" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3.5h8l3 3v14h-11Z"/><path d="M14.5 3.5v3h3M9 11h6M9 14.5h6M9 18h3.5"/></g></symbol>
+    <symbol id="i-sin-huella" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 4.5v15M16 4.5v15"/><path d="M6.5 7h3M6.5 11h3M6.5 15h3M14.5 7h3M14.5 11h3M14.5 15h3" stroke-opacity=".6"/><path d="M4 20 20 4"/></g></symbol>
+    <symbol id="i-agua" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 9c1.5-1.3 3-1.3 4.5 0s3 1.3 4.5 0 3-1.3 4.5 0 3 1.3 4.5 0"/><path d="M3 14c1.5-1.3 3-1.3 4.5 0s3 1.3 4.5 0 3-1.3 4.5 0 3 1.3 4.5 0"/><path d="M3 19c1.5-1.3 3-1.3 4.5 0s3 1.3 4.5 0 3-1.3 4.5 0 3 1.3 4.5 0" stroke-opacity=".6"/></g></symbol>
     <symbol id="i-alto" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V3.5"/><path d="M12 8c-2-1.6-4.5-1.8-6.5-1 1 2 3.5 3 6.5 3M12 13c2-1.6 4.5-1.8 6.5-1-1 2-3.5 3-6.5 3M12 17.5c-2-1.4-4.2-1.6-6-1 .9 1.8 3.2 2.6 6 2.6"/></g></symbol>
     <symbol id="i-relieve" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 19c3-4 6-4 9-1.5s6 2.5 10-2"/><path d="M2.5 13c3-4 6-4 9-1.5s6 2.5 10-2" stroke-dasharray="2 2.5"/><path d="M9 5.5h6M12 5.5v2"/></g></symbol>
     <symbol id="i-escudo" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 19 6v5.5c0 4.4-3 7.6-7 9-4-1.4-7-4.6-7-9V6Z"/><path d="m9 12 2.2 2.2L15.5 10"/></g></symbol>
+    <symbol id="i-seguro" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 12a8.5 8.5 0 0 1 17 0Z"/><path d="M12 12v6.5a2 2 0 0 1-4 0"/><path d="M12 3.5v-1"/></g></symbol>
+    <symbol id="i-telefono" viewBox="0 0 24 24"><path d="M6.5 3.5h3l1.5 4-2 1.5a10 10 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 4.5 5.5a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
     <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.5 7 8.5 6.5L20.5 7"/></g></symbol>
     <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.3"/></g></symbol>
     <symbol id="i-reloj" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></g></symbol>
     <symbol id="i-whatsapp" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1.2-3.7A8.5 8.5 0 1 1 8 19.2Z"/><path d="M9.2 8.6c.2-.4.5-.5.8-.5h.5c.2 0 .4.1.5.4l.7 1.6c.1.2 0 .5-.1.6l-.6.7a6 6 0 0 0 2.5 2.5l.7-.6c.2-.1.4-.2.6-.1l1.6.7c.3.1.4.3.4.5v.5c0 .3-.1.6-.5.8-.5.3-1.4.5-2.6 0a8.3 8.3 0 0 1-3.6-3.6c-.5-1.2-.3-2.1-.1-2.5Z" stroke-width="1.3"/></g></symbol>
     <symbol id="i-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/></g><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></symbol>
-    <symbol id="i-lluvia" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 15.5a4 4 0 0 1-.6-8A5.5 5.5 0 0 1 17 8.6a3.5 3.5 0 0 1 .5 6.9H7Z"/><path d="M8.5 18.5 7.5 21M12.5 18.5l-1 2.5M16.5 18.5l-1 2.5"/></g></symbol>
-    <symbol id="i-dron" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="6" height="6" rx="1.5"/><path d="M9.5 9.5 7 7M14.5 9.5 17 7M9.5 14.5 7 17M14.5 14.5 17 17"/><circle cx="5.5" cy="5.5" r="2.5"/><circle cx="18.5" cy="5.5" r="2.5"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></g></symbol>
   </defs>
 </svg>
 
@@ -58,9 +68,10 @@
       <a href="#inicio" aria-current="true">Inicio</a>
       <a href="#servicios">Servicios</a>
       <a href="#tecnologia">Tecnología</a>
-      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#clima">Clima</a>
       <a href="#nosotros">Nosotros</a>
       <a href="#preguntas">Preguntas</a>
+      <a href="#contacto">Contacto</a>
     </nav>
     <div class="nav__acciones">
       <a class="btn btn--lima btn--chico" href="https://wa.me/5493487217345?text=Hola%20AgroAtom%2C%20quiero%20cotizar%20una%20aplicaci%C3%B3n%20para%20___%20ha%20de%20___%20en%20___" data-wa>Cotizá <svg aria-hidden="true"><use href="#i-flecha"/></svg></a>
@@ -79,11 +90,11 @@
   <a href="#inicio">Inicio</a>
   <a href="#servicios">Servicios</a>
   <a href="#tecnologia">Tecnología</a>
-  <a href="#como-funciona">Cómo funciona</a>
+  <a href="#clima">Clima para aplicar</a>
   <a href="#nosotros">Nosotros</a>
   <a href="#preguntas">Preguntas</a>
   <a href="#contacto">Contacto</a>
-  <a class="btn btn--lima" href="https://wa.me/5493487217345?text=Hola%20AgroAtom%2C%20quiero%20cotizar%20una%20aplicaci%C3%B3n%20para%20___%20ha%20de%20___%20en%20___" data-wa>Cotizá por WhatsApp <svg aria-hidden="true"><use href="#i-flecha"/></svg></a>
+  <a class="btn btn--lima" href="https://wa.me/5493487217345?text=Hola%20AgroAtom%2C%20quiero%20cotizar%20una%20aplicaci%C3%B3n%20para%20___%20ha%20de%20___%20en%20___" data-wa>Pedí tu cotización por WhatsApp <svg aria-hidden="true"><use href="#i-flecha"/></svg></a>
   <div class="menu-movil__tema">
     <button class="icono-btn tema" type="button" data-tema aria-label="Cambiar a modo claro">
       <svg class="icono-luna" aria-hidden="true"><use href="#i-luna"/></svg>
@@ -104,6 +115,7 @@
       </picture>
       <p class="marcador-foto">Drone: foto de DJI, solo para el boceto<span>. [PENDIENTE: foto propia o permiso de DJI]</span></p>
     </div>
+
     <div class="hero__in">
       <div class="hero__texto">
         <p class="pildora"><span class="pildora__punto" aria-hidden="true"></span>Aplicación <span class="pildora__opc">aérea </span>con drones · Zárate y zona</p>
@@ -111,182 +123,151 @@
           <span>Precisión en cada lote.</span>
           <span class="acento">Sin pisar el cultivo.</span>
         </h1>
-        <p class="hero__bajada">Aplicaciones agrícolas aéreas con drones para pulverización, fertilización y siembra. Tecnología de precisión aplicada al campo.</p>
+        <p class="hero__bajada">Pulverizamos, fertilizamos y sembramos al voleo con DJI Agras T50, hasta 100 km de Zárate. Llegamos donde no entra el mosquito y aplicamos en el momento justo.</p>
         <div class="hero__acciones">
-          <a class="btn btn--lima" href="#agroatom">Conocé AgroAtom <svg aria-hidden="true"><use href="#i-flecha"/></svg></a>
+          <a class="btn btn--lima" href="https://wa.me/5493487217345?text=Hola%20AgroAtom%2C%20quiero%20cotizar%20una%20aplicaci%C3%B3n%20para%20___%20ha%20de%20___%20en%20___" data-wa>Pedí tu cotización <svg aria-hidden="true"><use href="#i-flecha"/></svg></a>
+          <button class="btn-play" type="button" data-video>
+            <span class="btn-play__circulo" aria-hidden="true"><svg><use href="#i-play"/></svg></span>
+            Mirá cómo trabajamos
+          </button>
         </div>
       </div>
+
       <div class="hero__escena-movil"><picture id="foto-portada-movil">
           <source type="image/avif" srcset="img/portada-movil-480.avif 480w, img/portada-movil-740.avif 740w" sizes="100vw">
           <source type="image/webp" srcset="img/portada-movil-480.webp 480w, img/portada-movil-740.webp 740w" sizes="100vw">
           <img class="escena" src="img/portada-movil-740.jpg" srcset="img/portada-movil-480.jpg 480w, img/portada-movil-740.jpg 740w" sizes="100vw" width="740" height="510" alt="Drone DJI Agras T50 pulverizando un cultivo al atardecer" loading="lazy">
         </picture></div>
-    </div>
-  </section>
 
-  <section class="seccion" id="agroatom" aria-labelledby="agroatom-t">
-    <div class="contenedor dos-col">
-      <figure class="foto-marco foto-marco--pendiente">
-        <img src="img/logo-original.webp" width="217" height="200" alt="" loading="lazy">
-        <figcaption>[PENDIENTE: foto real de ustedes trabajando con el T50]</figcaption>
-      </figure>
-      <div class="bloque">
-        <p class="etiqueta">¿Qué es AgroAtom?</p>
-        <h2 class="titulo" id="agroatom-t"><span>Tecnología aérea</span><span class="acento">aplicada al campo.</span></h2>
-        <p>AgroAtom nace con el objetivo de incorporar nuevas tecnologías a la producción agrícola, ofreciendo soluciones de aplicación aérea mediante drones.</p>
-        <p>Trabajamos para lograr aplicaciones precisas, eficientes y cuidadosas con el cultivo, especialmente en situaciones donde la maquinaria convencional encuentra limitaciones.</p>
-        <ul class="ficha">
-          <li><svg aria-hidden="true"><use href="#i-pin"/></svg>Zárate, Buenos Aires</li>
-          <li><svg aria-hidden="true"><use href="#i-pulverizar"/></svg>Aplicaciones agrícolas aéreas</li>
-          <li><svg aria-hidden="true"><use href="#i-dron"/></svg>DJI Agras T50</li>
+      <div class="hero__pie">
+        <ul class="datos" aria-label="El servicio en datos">
+          <li><svg aria-hidden="true"><use href="#i-radar"/></svg><strong>100 km</strong><span>de cobertura desde Zárate</span></li>
+          <li><svg aria-hidden="true"><use href="#i-tanque"/></svg><strong>40 L</strong><span>de tanque en cada vuelo</span></li>
+          <li><svg aria-hidden="true"><use href="#i-rinde"/></svg><strong>21 ha/h</strong><span>máximo según DJI, en condiciones ideales</span></li>
+          <li><svg aria-hidden="true"><use href="#i-licencia"/></svg><strong>Licencia</strong><span>de piloto y habilitación provincial</span></li>
+          <li hidden data-hectareas><svg aria-hidden="true"><use href="#i-lote"/></svg><strong>[PENDIENTE] ha</strong><span>aplicadas desde septiembre de 2025</span></li>
         </ul>
-      </div>
-    </div>
-  </section>
 
-  <section class="seccion seccion--suave" id="como-funciona" aria-labelledby="funciona-t">
-    <div class="contenedor">
-      <header class="seccion-cab seccion-cab--centro">
-        <p class="etiqueta">¿Cómo trabaja un dron agrícola?</p>
-        <h2 class="titulo" id="funciona-t"><span>Del lote</span><span class="acento">a la aplicación.</span></h2>
-      </header>
-      <div class="funciona" data-funciona>
-        <ol class="funciona__pasos">
-          <li class="funciona__paso"><span class="funciona__n">01</span><div><h3>Evaluación</h3><p>Se analiza el lote, el cultivo, la superficie y las condiciones ambientales.</p></div></li>
-          <li class="funciona__paso"><span class="funciona__n">02</span><div><h3>Preparación</h3><p>Se configura la misión de vuelo y los parámetros de aplicación.</p></div></li>
-          <li class="funciona__paso"><span class="funciona__n">03</span><div><h3>Aplicación</h3><p>El DJI Agras T50 realiza el recorrido de forma automatizada y precisa.</p></div></li>
-          <li class="funciona__paso"><span class="funciona__n">04</span><div><h3>Control</h3><p>Se supervisa el trabajo y se verifica la correcta cobertura del lote.</p></div></li>
-        </ol>
-        <figure class="funciona__vista">
-          <div class="funciona__barra">
-            <span class="funciona__estado" data-f-estado aria-live="polite">Lote completo · 100 % cubierto</span>
-            <span class="chip-ejemplo">Ejemplo</span>
+        <aside class="ahora" aria-labelledby="ahora-t" data-ahora hidden>
+          <div class="ahora__cab">
+            <h2 class="ahora__titulo" id="ahora-t">Condiciones ahora</h2>
+            <span class="ahora__lugar">Lima, Zárate</span>
           </div>
-          <svg class="f-mapa" viewBox="0 0 520 340" role="img" aria-labelledby="f-mapa-t">
-<title id="f-mapa-t">Ejemplo animado de una aplicación: se marca el lote, se carga la ruta, el drone recorre el lote en zigzag y al final queda todo el lote cubierto</title>
-<defs><clipPath id="f-recorte"><path d="M40 40L470 28L492 300L60 312Z"/></clipPath></defs>
-<g clip-path="url(#f-recorte)"><path d="M60 44L78 306M74.5 43.6L92.5 305.9M89 43.2L107 305.8M103.5 42.8L121.5 305.7M118 42.4L136 305.6M132.5 42L150.5 305.5M147 41.6L165 305.4M161.5 41.2L179.5 305.3M176 40.8L194 305.2M190.5 40.4L208.5 305.1M205 40L223 305M219.5 39.6L237.5 304.9M234 39.2L252 304.8M248.5 38.8L266.5 304.7M263 38.4L281 304.6M277.5 38L295.5 304.5M292 37.6L310 304.4M306.5 37.2L324.5 304.3M321 36.8L339 304.2M335.5 36.4L353.5 304.1M350 36L368 304M364.5 35.6L382.5 303.9M379 35.2L397 303.8M393.5 34.8L411.5 303.7M408 34.4L426 303.6M422.5 34L440.5 303.5M437 33.6L455 303.4M451.5 33.2L469.5 303.3M466 32.8L484 303.2M480.5 32.4L498.5 303.1" class="f-surcos"/></g>
-<path d="M62 74L455 62L474 214L392 288L80 290Z" class="f-area"/>
-<path d="M40 40L470 28L492 300L60 312Z" class="f-lote" pathLength="1"/>
-<g class="f-obst"><circle cx="52" cy="60" r="7"/><circle cx="54.2" cy="86" r="8"/><circle cx="56.4" cy="112" r="9"/><circle cx="58.6" cy="138" r="7"/><circle cx="60.8" cy="164" r="8"/><circle cx="63" cy="190" r="9"/><circle cx="65.2" cy="216" r="7"/><circle cx="67.4" cy="242" r="8"/><circle cx="69.6" cy="268" r="9"/><path d="M392 300 L500 200" class="f-tendido-zona"/><path d="M392 300 L500 200" class="f-tendido"/><rect x="405" y="280" width="8" height="8"/><rect x="461" y="228" width="8" height="8"/></g>
-<path d="M68.6 81.5L451.4 81.5L453.3 96.5L69.9 96.5L71.1 111.5L455.2 111.5L457.1 126.5L72.4 126.5L73.6 141.5L458.9 141.5L460.8 156.5L74.9 156.5L76.1 171.5L462.7 171.5L464.6 186.5L77.4 186.5L78.6 201.5L466.4 201.5L465.2 216.5L79.9 216.5L81.1 231.5L448.6 231.5L432 246.5L82.4 246.5L83.6 261.5L415.4 261.5L398.7 276.5L84.9 276.5" class="f-ruta"/>
-<path d="M68.6 81.5L451.4 81.5L453.3 96.5L69.9 96.5L71.1 111.5L455.2 111.5L457.1 126.5L72.4 126.5L73.6 141.5L458.9 141.5L460.8 156.5L74.9 156.5L76.1 171.5L462.7 171.5L464.6 186.5L77.4 186.5L78.6 201.5L466.4 201.5L465.2 216.5L79.9 216.5L81.1 231.5L448.6 231.5L432 246.5L82.4 246.5L83.6 261.5L415.4 261.5L398.7 276.5L84.9 276.5" class="f-hecha" pathLength="1"/>
-<g class="f-dron" transform="translate(68.6 81.5)"><circle r="22" class="f-rocio"/><g class="f-dron-cuerpo"><circle cx="-9" cy="-9" r="6.5" class="f-rotor"/><circle cx="9" cy="-9" r="6.5" class="f-rotor"/><circle cx="-9" cy="9" r="6.5" class="f-rotor"/><circle cx="9" cy="9" r="6.5" class="f-rotor"/><path d="M-9 -9L9 9M9 -9L-9 9" class="f-brazos"/><rect x="-5" y="-6" width="10" height="12" rx="3" class="f-cuerpo"/></g></g>
-</svg>
-          <ul class="funciona__param" aria-label="Parámetros del ejemplo">
-            <li><span>Superficie</span><strong>48 ha</strong></li>
-            <li><span>Dosis</span><strong>10 L/ha</strong></li>
-            <li><span>Ancho</span><strong>7 m</strong></li>
-            <li><span>Altura</span><strong>3 m</strong></li>
+          <p class="estado" data-estado="ok" data-ahora-estado>
+            <svg aria-hidden="true"><use href="#i-ok"/></svg><span>Buenas condiciones para aplicar</span>
+          </p>
+          <ul class="ahora__filas">
+            <li data-fila="viento"><span class="nombre"><svg aria-hidden="true"><use href="#i-viento"/></svg>Viento</span><span class="valor" data-v>--</span><span class="barra"><i></i></span></li>
+            <li data-fila="temp"><span class="nombre"><svg aria-hidden="true"><use href="#i-temp"/></svg>Temperatura</span><span class="valor" data-v>--</span><span class="barra"><i></i></span></li>
+            <li data-fila="hum"><span class="nombre"><svg aria-hidden="true"><use href="#i-gota"/></svg>Humedad</span><span class="valor" data-v>--</span><span class="barra"><i></i></span></li>
           </ul>
-          <button class="funciona__repetir" type="button" data-f-repetir hidden>Ver de nuevo</button>
-        </figure>
+          <p class="ahora__ventana" data-ahora-ventana hidden></p>
+          <p class="ahora__pie"><span data-ahora-fuente>Pronóstico Open-Meteo</span><a href="#clima">Ver la ventana de aplicación</a></p>
+        </aside>
       </div>
+
+      <a class="bajar" href="#servicios"><span class="bajar__mouse" aria-hidden="true"></span>Bajá para explorar</a>
     </div>
   </section>
 
   <section class="seccion" id="servicios" aria-labelledby="servicios-t">
     <div class="contenedor">
-      <header class="seccion-cab seccion-cab--centro">
-        <p class="etiqueta">¿Qué puede hacer el T50?</p>
-        <h2 class="titulo" id="servicios-t"><span>Un mismo equipo,</span><span class="acento">tres trabajos.</span></h2>
+      <header class="seccion-cab seccion-cab--doble">
+        <div>
+          <p class="etiqueta">Qué hacemos</p>
+          <h2 class="titulo" id="servicios-t"><span>Lo que tu lote necesita,</span><span class="acento">aplicado desde el aire.</span></h2>
+        </div>
+        <p>Trabajamos con receta agronómica y un plan de vuelo para cada lote. Volamos sobre soja, maíz, trigo, girasol, pasturas y frutales, hasta 100 km de Zárate.</p>
       </header>
-      <ul class="capacidades">
-        <li class="capacidad">
-          <svg class="capacidad__dibujo" viewBox="0 0 240 170" role="img" aria-label="Dibujo del drone pulverizando gotas finas sobre el cultivo" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g class="d-dron"><ellipse cx="54" cy="24" rx="32" ry="4"/><ellipse cx="186" cy="24" rx="32" ry="4"/><path d="M54 24v4M186 24v4"/><rect x="49" y="28" width="10" height="14" rx="3"/><rect x="181" y="28" width="10" height="14" rx="3"/><path d="M59 36 102 42M181 36 138 42"/><path d="M104 32h32l9 11-9 11h-32l-9-11Z"/><rect x="110" y="54" width="20" height="12" rx="3"/><path d="M108 66l-8 18M132 66l8 18M92 84h14M134 84h14"/></g><path class="d-boquilla" d="M54 42v5"/><circle class="d-gota" cx="46.0" cy="73.6" r="1.4"/><circle class="d-gota" cx="47.0" cy="65.5" r="1.4"/><circle class="d-gota" cx="70.7" cy="141.8" r="1.7"/><circle class="d-gota" cx="54.7" cy="72.2" r="1.4"/><circle class="d-gota" cx="47.3" cy="67.3" r="1.3"/><circle class="d-gota" cx="72.5" cy="142.7" r="1.7"/><circle class="d-gota" cx="38.8" cy="130.0" r="1.4"/><circle class="d-gota" cx="63.4" cy="112.7" r="1.7"/><circle class="d-gota" cx="31.8" cy="138.0" r="1.6"/><circle class="d-gota" cx="54.3" cy="117.2" r="1.3"/><circle class="d-gota" cx="40.6" cy="97.4" r="1.8"/><circle class="d-gota" cx="56.5" cy="136.5" r="1.4"/><circle class="d-gota" cx="58.0" cy="140.9" r="1.7"/><circle class="d-gota" cx="54.4" cy="134.8" r="1.4"/><circle class="d-gota" cx="51.3" cy="109.9" r="1.3"/><circle class="d-gota" cx="61.5" cy="80.5" r="1.2"/><circle class="d-gota" cx="55.3" cy="54.6" r="1.4"/><circle class="d-gota" cx="53.0" cy="103.5" r="1.4"/><circle class="d-gota" cx="35.8" cy="149.7" r="1.4"/><circle class="d-gota" cx="56.5" cy="70.3" r="1.4"/><circle class="d-gota" cx="60.5" cy="85.6" r="1.4"/><circle class="d-gota" cx="69.0" cy="105.9" r="1.3"/><circle class="d-gota" cx="51.0" cy="56.2" r="1.7"/><circle class="d-gota" cx="43.5" cy="111.5" r="1.4"/><circle class="d-gota" cx="53.3" cy="67.8" r="1.2"/><circle class="d-gota" cx="71.5" cy="119.7" r="1.8"/><circle class="d-gota" cx="75.3" cy="123.5" r="1.2"/><circle class="d-gota" cx="64.7" cy="78.9" r="1.7"/><circle class="d-gota" cx="67.0" cy="91.0" r="1.6"/><circle class="d-gota" cx="43.6" cy="131.8" r="1.3"/><circle class="d-gota" cx="42.7" cy="94.4" r="1.4"/><circle class="d-gota" cx="44.2" cy="146.2" r="1.2"/><circle class="d-gota" cx="50.6" cy="54.5" r="1.7"/><circle class="d-gota" cx="48.4" cy="86.3" r="1.3"/><path class="d-boquilla" d="M186 42v5"/><circle class="d-gota" cx="181.5" cy="148.2" r="1.3"/><circle class="d-gota" cx="181.1" cy="55.9" r="1.3"/><circle class="d-gota" cx="170.9" cy="117.7" r="1.2"/><circle class="d-gota" cx="177.6" cy="99.1" r="1.8"/><circle class="d-gota" cx="186.4" cy="62.2" r="1.7"/><circle class="d-gota" cx="200.3" cy="90.9" r="1.5"/><circle class="d-gota" cx="184.2" cy="74.2" r="1.2"/><circle class="d-gota" cx="178.5" cy="92.1" r="1.7"/><circle class="d-gota" cx="185.9" cy="133.1" r="1.2"/><circle class="d-gota" cx="180.5" cy="75.4" r="1.3"/><circle class="d-gota" cx="193.4" cy="73.1" r="1.3"/><circle class="d-gota" cx="190.6" cy="55.1" r="1.5"/><circle class="d-gota" cx="180.2" cy="149.1" r="1.7"/><circle class="d-gota" cx="198.2" cy="115.4" r="1.6"/><circle class="d-gota" cx="172.3" cy="99.4" r="1.3"/><circle class="d-gota" cx="207.4" cy="137.4" r="1.8"/><circle class="d-gota" cx="190.0" cy="83.7" r="1.7"/><circle class="d-gota" cx="199.0" cy="114.2" r="1.5"/><circle class="d-gota" cx="193.8" cy="115.5" r="1.4"/><circle class="d-gota" cx="211.5" cy="142.3" r="1.2"/><circle class="d-gota" cx="213.0" cy="147.1" r="1.6"/><circle class="d-gota" cx="190.1" cy="54.5" r="1.3"/><circle class="d-gota" cx="195.8" cy="146.9" r="1.2"/><circle class="d-gota" cx="188.3" cy="66.7" r="1.5"/><circle class="d-gota" cx="206.0" cy="124.6" r="1.3"/><circle class="d-gota" cx="189.5" cy="50.3" r="1.2"/><circle class="d-gota" cx="165.4" cy="137.6" r="1.7"/><circle class="d-gota" cx="204.4" cy="128.3" r="1.5"/><circle class="d-gota" cx="170.0" cy="137.9" r="1.6"/><circle class="d-gota" cx="195.9" cy="83.1" r="1.7"/><circle class="d-gota" cx="186.9" cy="97.2" r="1.2"/><circle class="d-gota" cx="186.9" cy="53.4" r="1.5"/><circle class="d-gota" cx="191.7" cy="136.5" r="1.3"/><circle class="d-gota" cx="193.2" cy="86.3" r="1.5"/><path class="d-suelo" d="M12 160H228"/><path class="d-suelo" d="M22 160l-3-7M22 160l3-7"/><path class="d-suelo" d="M38 160l-3-7M38 160l3-7"/><path class="d-suelo" d="M54 160l-3-7M54 160l3-7"/><path class="d-suelo" d="M70 160l-3-7M70 160l3-7"/><path class="d-suelo" d="M86 160l-3-7M86 160l3-7"/><path class="d-suelo" d="M102 160l-3-7M102 160l3-7"/><path class="d-suelo" d="M118 160l-3-7M118 160l3-7"/><path class="d-suelo" d="M134 160l-3-7M134 160l3-7"/><path class="d-suelo" d="M150 160l-3-7M150 160l3-7"/><path class="d-suelo" d="M166 160l-3-7M166 160l3-7"/><path class="d-suelo" d="M182 160l-3-7M182 160l3-7"/><path class="d-suelo" d="M198 160l-3-7M198 160l3-7"/><path class="d-suelo" d="M214 160l-3-7M214 160l3-7"/></svg>
-          <h3>Pulverización</h3>
-          <p>Aplicación de productos fitosanitarios con precisión sobre el cultivo.</p>
+
+      <ul class="servicios">
+        <li class="servicio">
+          <span class="servicio__icono" aria-hidden="true"><svg><use href="#i-pulverizar"/></svg></span>
+          <h3>Pulverización de fitosanitarios</h3>
+          <p>Herbicidas, fungicidas e insecticidas con la dosis de la receta y el tamaño de gota regulado para cada producto.</p>
+          <div class="servicio__mas" id="serv-1" hidden>
+            <h4>Cuándo conviene</h4>
+            <p>Lotes anegados o con piso blando, cultivos altos donde el mosquito pisa plantas, o cuando la ventana de aplicación es corta.</p>
+            <h4>Cultivos</h4>
+            <p>Soja, maíz, trigo, girasol, pasturas y frutales.</p>
+            <a class="enlace-flecha" href="https://wa.me/5493487217345?text=Hola%20AgroAtom%2C%20quiero%20cotizar%20una%20pulverizaci%C3%B3n%20para%20___%20ha%20de%20___%20en%20___" data-wa data-servicio="una pulverización">Cotizá una pulverización <svg aria-hidden="true"><use href="#i-flecha"/></svg></a>
+          </div>
+          <button class="servicio__abrir" type="button" aria-expanded="false" aria-controls="serv-1"><span class="visualmente-oculto">Ver más sobre pulverización</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></button>
         </li>
-        <li class="capacidad">
-          <svg class="capacidad__dibujo" viewBox="0 0 240 170" role="img" aria-label="Dibujo del drone esparciendo fertilizante sólido en abanico" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g class="d-dron"><ellipse cx="54" cy="24" rx="32" ry="4"/><ellipse cx="186" cy="24" rx="32" ry="4"/><path d="M54 24v4M186 24v4"/><rect x="49" y="28" width="10" height="14" rx="3"/><rect x="181" y="28" width="10" height="14" rx="3"/><path d="M59 36 102 42M181 36 138 42"/><path d="M104 32h32l9 11-9 11h-32l-9-11Z"/><rect x="110" y="54" width="20" height="12" rx="3"/><path d="M108 66l-8 18M132 66l8 18M92 84h14M134 84h14"/></g><path class="d-boquilla" d="M120 66v6"/><circle class="d-grano" cx="126.0" cy="76.8" r="3.4"/><circle class="d-grano" cx="121.3" cy="82.3" r="2.9"/><circle class="d-grano" cx="92.0" cy="134.3" r="2.7"/><circle class="d-grano" cx="165.6" cy="112.0" r="2.5"/><circle class="d-grano" cx="124.3" cy="84.5" r="3.5"/><circle class="d-grano" cx="113.3" cy="113.9" r="3.4"/><circle class="d-grano" cx="56.6" cy="133.5" r="3.5"/><circle class="d-grano" cx="110.3" cy="90.5" r="3.4"/><circle class="d-grano" cx="145.9" cy="107.3" r="2.6"/><circle class="d-grano" cx="67.3" cy="140.7" r="2.6"/><circle class="d-grano" cx="104.0" cy="112.6" r="3.1"/><circle class="d-grano" cx="155.3" cy="142.9" r="2.4"/><circle class="d-grano" cx="123.1" cy="99.1" r="3.0"/><circle class="d-grano" cx="117.9" cy="129.0" r="2.5"/><circle class="d-grano" cx="139.9" cy="94.2" r="2.8"/><circle class="d-grano" cx="190.3" cy="132.7" r="3.2"/><circle class="d-grano" cx="134.2" cy="126.1" r="2.8"/><circle class="d-grano" cx="114.4" cy="143.5" r="3.5"/><circle class="d-grano" cx="144.8" cy="98.6" r="3.3"/><circle class="d-grano" cx="113.1" cy="121.4" r="2.6"/><circle class="d-grano" cx="99.9" cy="133.1" r="3.2"/><circle class="d-grano" cx="104.0" cy="85.9" r="2.6"/><circle class="d-grano" cx="71.0" cy="135.9" r="3.5"/><circle class="d-grano" cx="126.0" cy="103.5" r="2.8"/><circle class="d-grano" cx="71.1" cy="121.9" r="2.9"/><circle class="d-grano" cx="64.5" cy="145.3" r="3.2"/><circle class="d-grano" cx="105.9" cy="100.2" r="2.4"/><circle class="d-grano" cx="128.7" cy="77.5" r="3.4"/><circle class="d-grano" cx="166.3" cy="135.3" r="3.5"/><circle class="d-grano" cx="123.6" cy="87.7" r="3.0"/><path class="d-suelo" d="M12 160H228"/><path class="d-suelo" d="M22 160l-3-7M22 160l3-7"/><path class="d-suelo" d="M38 160l-3-7M38 160l3-7"/><path class="d-suelo" d="M54 160l-3-7M54 160l3-7"/><path class="d-suelo" d="M70 160l-3-7M70 160l3-7"/><path class="d-suelo" d="M86 160l-3-7M86 160l3-7"/><path class="d-suelo" d="M102 160l-3-7M102 160l3-7"/><path class="d-suelo" d="M118 160l-3-7M118 160l3-7"/><path class="d-suelo" d="M134 160l-3-7M134 160l3-7"/><path class="d-suelo" d="M150 160l-3-7M150 160l3-7"/><path class="d-suelo" d="M166 160l-3-7M166 160l3-7"/><path class="d-suelo" d="M182 160l-3-7M182 160l3-7"/><path class="d-suelo" d="M198 160l-3-7M198 160l3-7"/><path class="d-suelo" d="M214 160l-3-7M214 160l3-7"/></svg>
-          <h3>Fertilización</h3>
-          <p>Distribución de fertilizantes sólidos de manera uniforme.</p>
+        <li class="servicio">
+          <span class="servicio__icono" aria-hidden="true"><svg><use href="#i-foliar"/></svg></span>
+          <h3>Fertilización foliar</h3>
+          <p>Nutrientes aplicados sobre la hoja, con la misma precisión de dosis y sin entrar al lote con ruedas.</p>
+          <div class="servicio__mas" id="serv-2" hidden>
+            <h4>Cuándo conviene</h4>
+            <p>En etapas avanzadas del cultivo, cuando entrar con un equipo terrestre quiebra plantas o deja huellas.</p>
+            <h4>Cultivos</h4>
+            <p>Soja, maíz, trigo, girasol, pasturas y frutales.</p>
+            <a class="enlace-flecha" href="https://wa.me/5493487217345?text=Hola%20AgroAtom%2C%20quiero%20cotizar%20una%20fertilizaci%C3%B3n%20foliar%20para%20___%20ha%20de%20___%20en%20___" data-wa data-servicio="una fertilización foliar">Cotizá una fertilización foliar <svg aria-hidden="true"><use href="#i-flecha"/></svg></a>
+          </div>
+          <button class="servicio__abrir" type="button" aria-expanded="false" aria-controls="serv-2"><span class="visualmente-oculto">Ver más sobre fertilización foliar</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></button>
         </li>
-        <li class="capacidad">
-          <svg class="capacidad__dibujo" viewBox="0 0 240 170" role="img" aria-label="Dibujo del drone sembrando al voleo, con semillas cayendo y brotes en el suelo" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g class="d-dron"><ellipse cx="54" cy="24" rx="32" ry="4"/><ellipse cx="186" cy="24" rx="32" ry="4"/><path d="M54 24v4M186 24v4"/><rect x="49" y="28" width="10" height="14" rx="3"/><rect x="181" y="28" width="10" height="14" rx="3"/><path d="M59 36 102 42M181 36 138 42"/><path d="M104 32h32l9 11-9 11h-32l-9-11Z"/><rect x="110" y="54" width="20" height="12" rx="3"/><path d="M108 66l-8 18M132 66l8 18M92 84h14M134 84h14"/></g><path class="d-boquilla" d="M120 66v6"/><ellipse class="d-semilla" cx="164.2" cy="115.9" rx="3.2" ry="1.8" transform="rotate(29 164.2 115.9)"/><ellipse class="d-semilla" cx="119.1" cy="89.4" rx="3.2" ry="1.8" transform="rotate(56 119.1 89.4)"/><ellipse class="d-semilla" cx="155.6" cy="118.8" rx="3.2" ry="1.8" transform="rotate(77 155.6 118.8)"/><ellipse class="d-semilla" cx="146.7" cy="134.3" rx="3.2" ry="1.8" transform="rotate(153 146.7 134.3)"/><ellipse class="d-semilla" cx="119.5" cy="93.7" rx="3.2" ry="1.8" transform="rotate(56 119.5 93.7)"/><ellipse class="d-semilla" cx="103.3" cy="98.4" rx="3.2" ry="1.8" transform="rotate(83 103.3 98.4)"/><ellipse class="d-semilla" cx="122.8" cy="113.5" rx="3.2" ry="1.8" transform="rotate(115 122.8 113.5)"/><ellipse class="d-semilla" cx="105.1" cy="137.3" rx="3.2" ry="1.8" transform="rotate(102 105.1 137.3)"/><ellipse class="d-semilla" cx="90.2" cy="142.0" rx="3.2" ry="1.8" transform="rotate(112 90.2 142.0)"/><ellipse class="d-semilla" cx="82.6" cy="105.2" rx="3.2" ry="1.8" transform="rotate(47 82.6 105.2)"/><ellipse class="d-semilla" cx="113.8" cy="137.2" rx="3.2" ry="1.8" transform="rotate(143 113.8 137.2)"/><ellipse class="d-semilla" cx="105.5" cy="118.6" rx="3.2" ry="1.8" transform="rotate(99 105.5 118.6)"/><ellipse class="d-semilla" cx="82.8" cy="119.1" rx="3.2" ry="1.8" transform="rotate(17 82.8 119.1)"/><ellipse class="d-semilla" cx="159.0" cy="108.2" rx="3.2" ry="1.8" transform="rotate(161 159.0 108.2)"/><ellipse class="d-semilla" cx="135.8" cy="138.7" rx="3.2" ry="1.8" transform="rotate(79 135.8 138.7)"/><ellipse class="d-semilla" cx="158.5" cy="138.1" rx="3.2" ry="1.8" transform="rotate(123 158.5 138.1)"/><ellipse class="d-semilla" cx="140.9" cy="92.7" rx="3.2" ry="1.8" transform="rotate(154 140.9 92.7)"/><ellipse class="d-semilla" cx="73.9" cy="129.3" rx="3.2" ry="1.8" transform="rotate(61 73.9 129.3)"/><ellipse class="d-semilla" cx="110.4" cy="82.6" rx="3.2" ry="1.8" transform="rotate(12 110.4 82.6)"/><ellipse class="d-semilla" cx="131.7" cy="88.8" rx="3.2" ry="1.8" transform="rotate(174 131.7 88.8)"/><ellipse class="d-semilla" cx="143.0" cy="119.0" rx="3.2" ry="1.8" transform="rotate(137 143.0 119.0)"/><ellipse class="d-semilla" cx="121.3" cy="95.3" rx="3.2" ry="1.8" transform="rotate(40 121.3 95.3)"/><path class="d-brote" d="M40 160v-9M40 154c-4-1-6-4-6-7 4 0 6 3 6 7ZM40 152c4-1 6-4 6-7-4 0-6 3-6 7Z"/><path class="d-brote" d="M88 160v-9M88 154c-4-1-6-4-6-7 4 0 6 3 6 7ZM88 152c4-1 6-4 6-7-4 0-6 3-6 7Z"/><path class="d-brote" d="M152 160v-9M152 154c-4-1-6-4-6-7 4 0 6 3 6 7ZM152 152c4-1 6-4 6-7-4 0-6 3-6 7Z"/><path class="d-brote" d="M200 160v-9M200 154c-4-1-6-4-6-7 4 0 6 3 6 7ZM200 152c4-1 6-4 6-7-4 0-6 3-6 7Z"/><path class="d-suelo" d="M12 160H228"/><path class="d-suelo" d="M22 160l-3-7M22 160l3-7"/><path class="d-suelo" d="M38 160l-3-7M38 160l3-7"/><path class="d-suelo" d="M54 160l-3-7M54 160l3-7"/><path class="d-suelo" d="M70 160l-3-7M70 160l3-7"/><path class="d-suelo" d="M86 160l-3-7M86 160l3-7"/><path class="d-suelo" d="M102 160l-3-7M102 160l3-7"/><path class="d-suelo" d="M118 160l-3-7M118 160l3-7"/><path class="d-suelo" d="M134 160l-3-7M134 160l3-7"/><path class="d-suelo" d="M150 160l-3-7M150 160l3-7"/><path class="d-suelo" d="M166 160l-3-7M166 160l3-7"/><path class="d-suelo" d="M182 160l-3-7M182 160l3-7"/><path class="d-suelo" d="M198 160l-3-7M198 160l3-7"/><path class="d-suelo" d="M214 160l-3-7M214 160l3-7"/></svg>
-          <h3>Siembra</h3>
-          <p>Aplicación de semillas en determinadas condiciones y terrenos.</p>
+        <li class="servicio">
+          <span class="servicio__icono" aria-hidden="true"><svg><use href="#i-granulado"/></svg></span>
+          <h3>Fertilizantes granulados</h3>
+          <p>Esparcido de fertilizante granulado con el tanque de esparcido del T50, de hasta 50 kg por vuelo.</p>
+          <div class="servicio__mas" id="serv-3" hidden>
+            <h4>Cuándo conviene</h4>
+            <p>Refertilizaciones con el lote húmedo, cuando no querés marcar huellas ni compactar el suelo.</p>
+            <h4>Cultivos</h4>
+            <p>Trigo, maíz, pasturas y otros cultivos extensivos.</p>
+            <a class="enlace-flecha" href="https://wa.me/5493487217345?text=Hola%20AgroAtom%2C%20quiero%20cotizar%20un%20esparcido%20de%20fertilizante%20granulado%20para%20___%20ha%20de%20___%20en%20___" data-wa data-servicio="un esparcido de fertilizante granulado">Cotizá un esparcido <svg aria-hidden="true"><use href="#i-flecha"/></svg></a>
+          </div>
+          <button class="servicio__abrir" type="button" aria-expanded="false" aria-controls="serv-3"><span class="visualmente-oculto">Ver más sobre fertilizantes granulados</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></button>
+        </li>
+        <li class="servicio">
+          <span class="servicio__icono" aria-hidden="true"><svg><use href="#i-semilla"/></svg></span>
+          <h3>Siembra al voleo</h3>
+          <p>Semilla de cultivos de servicio o de cobertura esparcida desde el aire, sin pisar el cultivo en pie.</p>
+          <div class="servicio__mas" id="serv-4" hidden>
+            <h4>Cuándo conviene</h4>
+            <p>Para sembrar el cultivo de servicio antes de la cosecha del cultivo principal y ganar días de crecimiento.</p>
+            <h4>Especies</h4>
+            <p><span class="pendiente-txt">[PENDIENTE: qué especies siembran]</span></p>
+            <a class="enlace-flecha" href="https://wa.me/5493487217345?text=Hola%20AgroAtom%2C%20quiero%20cotizar%20una%20siembra%20al%20voleo%20para%20___%20ha%20de%20___%20en%20___" data-wa data-servicio="una siembra al voleo">Cotizá una siembra al voleo <svg aria-hidden="true"><use href="#i-flecha"/></svg></a>
+          </div>
+          <button class="servicio__abrir" type="button" aria-expanded="false" aria-controls="serv-4"><span class="visualmente-oculto">Ver más sobre siembra al voleo</span><svg aria-hidden="true"><use href="#i-flecha"/></svg></button>
         </li>
       </ul>
     </div>
   </section>
 
-  <section class="seccion seccion--suave" id="ventajas" aria-labelledby="ventajas-t">
-    <div class="contenedor">
-      <header class="seccion-cab">
-        <p class="etiqueta">¿Por qué utilizar un dron?</p>
-        <h2 class="titulo" id="ventajas-t"><span>Cuando el campo</span><span class="acento">presenta limitaciones.</span></h2>
-      </header>
-      <ul class="limitaciones">
-        <li><svg aria-hidden="true"><use href="#i-lluvia"/></svg><h3>Después de una lluvia</h3><p>Cuando la maquinaria terrestre no puede ingresar al lote.</p></li>
-        <li><svg aria-hidden="true"><use href="#i-alto"/></svg><h3>Cultivos desarrollados</h3><p>Reduce el tránsito de maquinaria sobre el cultivo.</p><p class="limitaciones__dato">En soja de fin de ciclo, la huella del equipo terrestre hizo perder en promedio el 1,7 % del rinde [1].</p></li>
-        <li><svg aria-hidden="true"><use href="#i-gota"/></svg><h3>Menor volumen de agua</h3><p>Permite trabajar con volúmenes adecuados para determinadas aplicaciones.</p><p class="limitaciones__dato">En soja y maíz se suele trabajar con 10 a 20 L/ha, siempre según el marbete [2].</p></li>
-        <li><svg aria-hidden="true"><use href="#i-relieve"/></svg><h3>Zonas de difícil acceso</h3><p>Permite llegar a sectores donde la maquinaria convencional presenta dificultades.</p></li>
-      </ul>
-      <details class="fuentes-mini">
-        <summary>Ver fuentes [1] [2]</summary>
-        <ol>
-          <li><a href="https://portal.amelica.org/ameli/journal/586/5864885011/html/" rel="noopener">Efecto de la pisada de la pulverizadora sobre el rendimiento del cultivo de soja en aplicaciones de fin de ciclo</a>, FAVE Ciencias Agrarias, UNL.</li>
-          <li><a href="https://redagricola.com/aspectos-tecnicos-clave-para-una-aplicacion-eficiente-con-drones/" rel="noopener">Aspectos técnicos clave para una aplicación eficiente con drones</a>, Redagrícola.</li>
-        </ol>
-      </details>
-    </div>
-  </section>
-
-  <section class="seccion" id="tecnologia" aria-labelledby="tec-t">
+  <section class="seccion seccion--tec seccion--suave" id="tecnologia" aria-labelledby="tec-t">
+    <svg class="lomas-deco lomas-deco--izq" viewBox="0 0 520 220" fill="none" aria-hidden="true">
+      <g stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+        <path d="M0 90c90-28 165-18 230 2 68 22 135 10 290-36"/>
+        <path d="M0 122c90-28 165-18 230 2 68 22 135 10 290-36" stroke-opacity=".7"/>
+        <path d="M0 154c90-28 165-18 230 2 68 22 135 10 290-36" stroke-opacity=".45"/>
+      </g>
+    </svg>
     <div class="contenedor tec">
-      <figure class="tec__foto">
-        <img src="img/t50.webp" width="735" height="641" alt="Drone DJI Agras T50 pulverizando sobre un cultivo" loading="lazy">
-        <figcaption>Foto: DJI, solo para el boceto <span class="pendiente-txt">[PENDIENTE: foto propia del T50]</span></figcaption>
-      </figure>
       <div class="tec__texto">
-        <p class="etiqueta">¿Con qué trabajamos?</p>
-        <h2 class="titulo" id="tec-t"><span>DJI Agras T50.</span></h2>
-        <dl class="specs">
-          <div><dt>40 L</dt><dd>Tanque de pulverización</dd></div>
-          <div><dt>50 kg</dt><dd>Carga de sólidos</dd></div>
-          <div><dt>4 a 11 m</dt><dd>Ancho de pulverización</dd></div>
-          <div><dt>DJI</dt><dd>Tecnología de vuelo y aplicación</dd></div>
-        </dl>
-        <button class="btn btn--borde" type="button" aria-expanded="false" aria-controls="tec-mas" data-abrir>Conocer la tecnología <svg aria-hidden="true"><use href="#i-flecha"/></svg></button>
+        <p class="etiqueta">Nuestra tecnología</p>
+        <h2 class="titulo" id="tec-t"><span>DJI Agras T50.</span><span class="acento">Precisión en cada pasada.</span></h2>
+        <p>Es el drone agrícola de DJI pensado para cultivos extensivos. Estos son los datos del fabricante: los de rendimiento son en condiciones ideales.</p>
+        <ul class="tildes">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Tanque de pulverización de 40 L y esparcido de hasta 50 kg.</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Caudal de hasta 16 L/min con 2 atomizadores, o 24 L/min con 4.</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Hasta 21 ha/h en cultivos extensivos, según DJI.</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Radar delantero y trasero y visión binocular para esquivar obstáculos y seguir el relieve.</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Tamaño de gota regulable, de 50 a 500 micrones.</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Ancho de trabajo de 4 a 11 m, volando a 3 m del cultivo.</li>
+        </ul>
+        <p class="fuente-dato">Fuente: <a href="https://ag.dji.com/t50/specs" rel="noopener">especificaciones oficiales del DJI Agras T50</a>. <span class="pendiente-txt">[PENDIENTE: datos propios de campo, si los tienen, van primero]</span></p>
       </div>
-      <div class="tec__mas" id="tec-mas" hidden>
-        <div>
-          <h3>Especificaciones</h3>
-          <ul class="tildes">
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Caudal de hasta 16 L/min con 2 atomizadores, o 24 L/min con 4.</li>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Tanque de esparcido de 75 L, con 8 m de ancho de esparcido.</li>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Hasta 21 ha/h en cultivos extensivos, según DJI, en condiciones ideales.</li>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Gota regulable de 50 a 500 micrones.</li>
-          </ul>
-        </div>
-        <div>
-          <h3>En el lote</h3>
-          <ul class="tildes">
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Dos atomizadores centrífugos arman la gota según el producto y la receta.</li>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg>La corriente de aire de los rotores empuja la gota hacia la parte media y baja de la planta.</li>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Dos radares y una cámara doble siguen el terreno (hasta 50° de pendiente) y detectan obstáculos de 1 a 50 m.</li>
-          </ul>
-        </div>
-        <p class="fuente-dato">Fuente: DJI, <a href="https://ag.dji.com/t50/specs" rel="noopener">especificaciones</a> y <a href="https://ag.dji.com/newsroom/agras-t50-top-features" rel="noopener">funciones del Agras T50</a>. <span class="pendiente-txt">[PENDIENTE: datos propios de campo]</span></p>
-      </div>
-    </div>
-  </section>
 
-  <section class="seccion seccion--suave" id="precision" aria-labelledby="precision-t">
-    <div class="contenedor">
-      <header class="seccion-cab">
-        <p class="etiqueta">Precisión y control</p>
-        <h2 class="titulo" id="precision-t"><span>Cada vuelo</span><span class="acento">está planificado.</span></h2>
-      </header>
-      <ol class="cadena">
-        <li><svg aria-hidden="true"><use href="#i-mapa"/></svg>Mapa del lote</li>
-        <li><svg aria-hidden="true"><use href="#i-ruta"/></svg>Planificación de ruta</li>
-        <li><svg aria-hidden="true"><use href="#i-receta"/></svg>Parámetros de aplicación</li>
-        <li><svg aria-hidden="true"><use href="#i-pulverizar"/></svg>Vuelo</li>
-        <li><svg aria-hidden="true"><use href="#i-ok"/></svg>Supervisión</li>
-      </ol>
       <div class="mision" aria-labelledby="mision-t">
+        <nav class="mision__riel" aria-hidden="true">
+          <span class="is-activo"><svg><use href="#i-mapa"/></svg></span>
+          <span><svg><use href="#i-ruta"/></svg></span>
+          <span><svg><use href="#i-viento"/></svg></span>
+          <span><svg><use href="#i-receta"/></svg></span>
+        </nav>
         <div class="mision__cuerpo">
           <div class="mision__cab">
             <div>
@@ -299,8 +280,20 @@
             <li><span>Superficie</span><strong>48<small> ha</small></strong></li>
             <li><span>Dosis</span><strong>10<small> L/ha</small></strong></li>
             <li><span>Ancho de trabajo</span><strong>7<small> m</small></strong></li>
-            <li><span>Altura de vuelo</span><strong>3<small> m</small></strong></li>
           </ul>
+          <div class="mision__mapa-caja"><svg class="mision__mapa" viewBox="0 0 520 340" role="img" aria-labelledby="mision-mapa-t">
+<title id="mision-mapa-t">Ejemplo de mapa de un lote con la ruta de vuelo en zigzag, la cortina de árboles y el tendido eléctrico marcados como obstáculos</title>
+<path d="M40 40L470 28L492 300L60 312Z" class="lote"/>
+<path d="M62 74L455 62L474 214L392 288L80 290Z" class="trabajo"/>
+<g class="arboles"><circle cx="52" cy="60" r="7"/><circle cx="54.2" cy="86" r="8"/><circle cx="56.4" cy="112" r="9"/><circle cx="58.6" cy="138" r="7"/><circle cx="60.8" cy="164" r="8"/><circle cx="63" cy="190" r="9"/><circle cx="65.2" cy="216" r="7"/><circle cx="67.4" cy="242" r="8"/><circle cx="69.6" cy="268" r="9"/></g>
+<path d="M392 300 L500 200" class="tendido-zona"/>
+<path d="M392 300 L500 200" class="tendido"/>
+<g class="torres"><rect x="405" y="280" width="8" height="8"/><rect x="461" y="228" width="8" height="8"/></g>
+<path d="M68.6 81.5L451.4 81.5L453.3 96.5L69.9 96.5L71.1 111.5L455.2 111.5L457.1 126.5L72.4 126.5L73.6 141.5L458.9 141.5L460.8 156.5L74.9 156.5L76.1 171.5L462.7 171.5L464.6 186.5L77.4 186.5L78.6 201.5L466.4 201.5L465.2 216.5L79.9 216.5L81.1 231.5L448.6 231.5L432 246.5L82.4 246.5L83.6 261.5L415.4 261.5L398.7 276.5L84.9 276.5" class="ruta-pendiente" pathLength="1"/>
+<path d="M68.6 81.5L451.4 81.5L453.3 96.5L69.9 96.5L71.1 111.5L455.2 111.5L457.1 126.5L72.4 126.5L73.6 141.5L458.9 141.5L460.8 156.5L74.9 156.5L76.1 171.5L462.7 171.5L464.6 186.5L77.4 186.5L78.6 201.5L466.4 201.5L465.2 216.5L79.9 216.5L81.1 231.5L448.6 231.5L432 246.5L82.4 246.5L83.6 261.5L415.4 261.5L398.7 276.5L84.9 276.5" class="ruta-hecha" pathLength="1" style="--avance:0.62"/>
+<g class="dron-pos" transform="translate(242.4 201.5)"><circle r="11" class="dron-halo"/><circle r="5"/></g>
+<g class="mision__ref"><text x="70" y="330">Cortina de árboles</text><text x="470" y="322" text-anchor="end">Tendido eléctrico</text></g>
+</svg></div>
           <div class="mision__abajo">
             <div class="anillo-avance" style="--avance:.62" role="img" aria-label="Avance de la aplicación: 62 %, 30 de 48 hectáreas">
               <svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="34" class="anillo-avance__fondo"/><circle cx="40" cy="40" r="34" class="anillo-avance__valor" pathLength="1"/></svg>
@@ -319,17 +312,34 @@
           </div>
         </div>
       </div>
+
+      <div class="funciona" style="grid-column: 1 / -1">
+        <h3>Cómo trabaja el T50 en el lote</h3>
+        <ol>
+          <li><b>1 · Plan de vuelo</b><p>Se marca el contorno del lote y los obstáculos, y el equipo arma la ruta en pasadas paralelas con el ancho de trabajo elegido.</p></li>
+          <li><b>2 · Gota a medida</b><p>Dos atomizadores centrífugos arman gotas de 50 a 500 micrones. El tamaño se regula según el producto y la receta.</p></li>
+          <li><b>3 · Aire hacia abajo</b><p>La corriente de aire de los rotores empuja la gota hacia adentro del cultivo: llega a la parte media y baja de la planta, no solo arriba.</p></li>
+          <li><b>4 · Relieve y obstáculos</b><p>Dos radares y una cámara doble siguen el terreno (hasta 50° de pendiente) y detectan obstáculos de 1 a 50 m.</p></li>
+        </ol>
+        <p class="fuente-dato">Fuente: DJI, <a href="https://ag.dji.com/t50/specs" rel="noopener">especificaciones</a> y <a href="https://ag.dji.com/newsroom/agras-t50-top-features" rel="noopener">funciones del Agras T50</a>.</p>
+      </div>
     </div>
   </section>
 
-  <section class="seccion" id="clima" aria-labelledby="clima-t">
+  <section class="clima" id="clima" aria-labelledby="clima-t">
+    <svg class="lomas-deco" viewBox="0 0 520 220" fill="none" aria-hidden="true">
+      <g stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+        <path d="M0 90c90-28 165-18 230 2 68 22 135 10 290-36"/>
+        <path d="M0 122c90-28 165-18 230 2 68 22 135 10 290-36" stroke-opacity=".7"/>
+        <path d="M0 154c90-28 165-18 230 2 68 22 135 10 290-36" stroke-opacity=".45"/>
+        <path d="M0 186c90-28 165-18 230 2 68 22 135 10 290-36" stroke-opacity=".25"/>
+      </g>
+    </svg>
     <div class="contenedor">
-      <header class="seccion-cab seccion-cab--doble">
-        <div>
-          <p class="etiqueta">¿Cuándo se puede aplicar?</p>
-          <h2 class="titulo" id="clima-t"><span>El clima también forma</span><span class="acento">parte de la aplicación.</span></h2>
-        </div>
-        <p>Las condiciones ambientales influyen directamente en la calidad y la seguridad de una aplicación aérea. Por eso las medimos antes de cada vuelo.</p>
+      <header class="seccion-cab">
+        <p class="etiqueta">Clima para aplicar</p>
+        <h2 class="titulo" id="clima-t"><span>¿Hoy se puede aplicar?</span><span class="acento">Mirá la ventana en Lima.</span></h2>
+        <p>Cruzamos el pronóstico de viento, ráfagas, Delta T, temperatura, humedad y lluvia, hora por hora, y te mostramos cuándo conviene volar en las próximas 24 horas. Es una guía: antes de cada vuelo medimos en el lote y seguimos la receta.</p>
       </header>
 
       <div class="tablero is-cargando" data-tablero>
@@ -337,36 +347,27 @@
           <span class="en-vivo">En vivo · Lima, Zárate</span>
           <span data-actualizado>Actualizando…</span>
         </div>
-        <div class="clima-ahora">
-          <div class="clima-ahora__estado estado" data-estado="ok" data-estado-ahora>
-            <svg aria-hidden="true"><use href="#i-ok"/></svg>
-            <span><span class="clima-ahora__rotulo">Condición</span><span data-estado-texto>Apto para aplicar</span><span class="estado__detalle" data-estado-motivo></span></span>
-          </div>
-          <div class="variable" data-var="viento" data-estado="ok">
-            <span class="variable__nombre">Viento <svg aria-hidden="true"><use href="#i-ok"/></svg></span>
-            <span class="variable__valor" data-v>--</span>
-            <span class="variable__nota" data-nota>--</span>
-            <svg class="brujula" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15" fill="none" stroke="currentColor" stroke-width="1"/><g class="flecha" data-flecha><path d="M17 6v22M12.5 23.5 17 28l4.5-4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
-          </div>
-          <div class="variable" data-var="temp" data-estado="ok">
-            <span class="variable__nombre">Temperatura <svg aria-hidden="true"><use href="#i-ok"/></svg></span>
-            <span class="variable__valor" data-v>--</span>
-          </div>
-          <div class="variable" data-var="hum" data-estado="ok">
-            <span class="variable__nombre">Humedad <svg aria-hidden="true"><use href="#i-ok"/></svg></span>
-            <span class="variable__valor" data-v>--</span>
-          </div>
-        </div>
 
-        <details class="clima-mas">
-          <summary>Ver ráfagas, Delta T y las próximas 24 horas <svg aria-hidden="true"><use href="#i-abajo"/></svg></summary>
-          <div class="clima-mas__cuerpo">
+        <div class="tablero__cuerpo">
+          <div class="panel">
+            <h3 class="panel__titulo">Ahora</h3>
+            <p class="estado estado--grande" data-estado="ok" data-estado-ahora>
+              <svg aria-hidden="true"><use href="#i-ok"/></svg>
+              <span><span data-estado-texto>Buenas condiciones para aplicar</span><span class="estado__detalle" data-estado-motivo></span></span>
+            </p>
             <ul class="variables">
+              <li class="variable" data-var="viento" data-estado="ok">
+                <span class="variable__nombre">Viento <svg aria-hidden="true"><use href="#i-ok"/></svg></span>
+                <span class="variable__valor" data-v>--</span>
+                <span class="variable__nota" data-nota>--</span>
+                <svg class="brujula" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15" fill="none" stroke="currentColor" stroke-width="1"/><g class="flecha" data-flecha><path d="M17 6v22M12.5 23.5 17 28l4.5-4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+              </li>
               <li class="variable" data-var="rafagas" data-estado="ok">
                 <span class="variable__nombre">Ráfagas <svg aria-hidden="true"><use href="#i-ok"/></svg></span>
                 <span class="variable__valor" data-v>--</span>
+                <span class="variable__nota">máximo en la hora</span>
               </li>
-              <li class="variable" data-var="deltat" data-estado="ok">
+              <li class="variable variable--ancha" data-var="deltat" data-estado="ok">
                 <span class="variable__nombre">Delta T (evaporación de la gota) <svg aria-hidden="true"><use href="#i-ok"/></svg></span>
                 <span class="variable__valor" data-v>--</span>
                 <div class="medidor" aria-hidden="true">
@@ -374,161 +375,281 @@
                   <span class="medidor__banda medidor__banda--prec" style="left:57.14%;width:14.29%"></span>
                   <span class="medidor__marca" data-marca></span>
                 </div>
+                <div class="medidor__escala" aria-hidden="true"><span>0</span><span>2</span><span>4</span><span>6</span><span>8</span><span>10</span><span>12</span><span>14 °C</span></div>
                 <span class="variable__nota">Ideal entre 2 y 8 °C</span>
               </li>
-              <li class="variable" data-var="lluvia" data-estado="ok">
+              <li class="variable" data-var="temp" data-estado="ok">
+                <span class="variable__nombre">Temperatura <svg aria-hidden="true"><use href="#i-ok"/></svg></span>
+                <span class="variable__valor" data-v>--</span>
+              </li>
+              <li class="variable" data-var="hum" data-estado="ok">
+                <span class="variable__nombre">Humedad <svg aria-hidden="true"><use href="#i-ok"/></svg></span>
+                <span class="variable__valor" data-v>--</span>
+              </li>
+              <li class="variable variable--ancha" data-var="lluvia" data-estado="ok">
                 <span class="variable__nombre">Lluvia en las próximas 3 h <svg aria-hidden="true"><use href="#i-ok"/></svg></span>
                 <span class="variable__valor" data-v>--</span>
               </li>
             </ul>
-            <div class="clima-mas__horas">
-              <h3 class="panel__titulo">Próximas 24 horas</h3>
-              <div class="ventanas" data-ventanas aria-live="polite"></div>
-              <div class="grafico">
-                <p class="visualmente-oculto" id="grafico-desc">Barras por hora: la altura es el viento en km/h y el color es el estado para aplicar. Usá las flechas para recorrer las horas. Los mismos datos están en la tabla.</p>
-                <div class="grafico__area">
-                  <div class="grafico__grilla" data-grilla></div>
-                  <div class="barras" data-barras role="group" aria-label="Viento y estado por hora" aria-describedby="grafico-desc"></div>
-                  <div class="tooltip" data-tooltip role="status"></div>
-                </div>
-                <div class="horas" data-horas aria-hidden="true"></div>
-                <div class="lluvias" data-lluvias aria-hidden="true"></div>
-                <span class="grafico__eje-lluvia" aria-hidden="true">lluvia</span>
+          </div>
+
+          <div class="panel">
+            <h3 class="panel__titulo">Próximas 24 horas</h3>
+            <div class="ventanas" data-ventanas aria-live="polite"></div>
+            <div class="grafico">
+              <p class="visualmente-oculto" id="grafico-desc">Barras por hora: la altura es el viento en km/h y el color es el estado para aplicar. Usá las flechas para recorrer las horas. Los mismos datos están en la tabla de abajo.</p>
+              <div class="grafico__area">
+                <div class="grafico__grilla" data-grilla></div>
+                <div class="barras" data-barras role="group" aria-label="Viento y estado por hora" aria-describedby="grafico-desc"></div>
+                <div class="tooltip" data-tooltip role="status"></div>
               </div>
-              <div class="leyenda" aria-label="Referencias">
-                <span data-estado="ok"><i></i>Apto</span>
-                <span data-estado="prec"><i></i>Con precaución</span>
-                <span data-estado="no"><i></i>No recomendado</span>
-                <span>Altura de la barra: viento en km/h</span>
-              </div>
+              <div class="horas" data-horas aria-hidden="true"></div>
+              <div class="lluvias" data-lluvias aria-hidden="true"></div>
+              <span class="grafico__eje-lluvia" aria-hidden="true">lluvia</span>
             </div>
-            <div class="desplegables">
-              <details class="desplegable">
-                <summary>Cómo lo calculamos <svg aria-hidden="true"><use href="#i-abajo"/></svg></summary>
-                <div class="desplegable__cuerpo">
-                  <table class="criterios">
-                    <thead><tr><th scope="col">Variable</th><th scope="col">Apto</th><th scope="col">Precaución</th><th scope="col">No recomendado</th></tr></thead>
-                    <tbody>
-                      <tr><th scope="row">Viento</th><td>4 a 15 km/h</td><td>2 a 4 o 15 a 20 km/h</td><td>menos de 2 o más de 20 km/h</td></tr>
-                      <tr><th scope="row">Ráfagas</th><td>hasta 20 km/h</td><td>20 a 25 km/h</td><td>más de 25 km/h</td></tr>
-                      <tr><th scope="row">Delta T</th><td>2 a 8 °C</td><td>menos de 2 o 8 a 10 °C</td><td>más de 10 °C</td></tr>
-                      <tr><th scope="row">Temperatura</th><td>hasta 28 °C</td><td>28 a 32 °C</td><td>más de 32 °C</td></tr>
-                      <tr><th scope="row">Humedad</th><td>50 % o más</td><td>40 a 50 %</td><td>menos de 40 %</td></tr>
-                      <tr><th scope="row">Lluvia</th><td>menos de 30 % en 3 h</td><td>30 a 60 %</td><td>más de 60 % o lloviendo</td></tr>
-                    </tbody>
-                  </table>
-                  <p class="pendiente">[PENDIENTE: confirmar estos umbrales con ustedes y su asesor]</p>
-                </div>
-              </details>
-              <details class="desplegable">
-                <summary>Ver los datos en una tabla <svg aria-hidden="true"><use href="#i-abajo"/></svg></summary>
-                <div class="desplegable__cuerpo tabla-scroll" data-tabla></div>
-              </details>
+            <div class="leyenda" aria-label="Referencias">
+              <span data-estado="ok"><i></i>Buenas condiciones</span>
+              <span data-estado="prec"><i></i>Con precaución</span>
+              <span data-estado="no"><i></i>No conviene</span>
+              <span>Altura de la barra: viento en km/h</span>
             </div>
           </div>
-        </details>
+        </div>
 
         <div class="tablero__pie">
-          <p class="aviso">Guía orientativa con el pronóstico para Lima, Zárate. En el lote medimos viento, temperatura y humedad antes de cada vuelo, y la decisión final se toma con la receta agronómica.</p>
-          <p class="fuente" data-fuente>Datos: <a href="https://open-meteo.com/" rel="noopener">Open-Meteo.com</a> (CC BY 4.0).</p>
+          <div class="desplegables">
+            <details class="desplegable">
+              <summary>Cómo lo calculamos <svg aria-hidden="true"><use href="#i-abajo"/></svg></summary>
+              <div class="desplegable__cuerpo">
+                <table class="criterios">
+                  <thead><tr><th scope="col">Variable</th><th scope="col">Buenas</th><th scope="col">Precaución</th><th scope="col">No conviene</th></tr></thead>
+                  <tbody>
+                    <tr><th scope="row">Viento</th><td>4 a 15 km/h</td><td>2 a 4 o 15 a 20 km/h</td><td>menos de 2 o más de 20 km/h</td></tr>
+                    <tr><th scope="row">Ráfagas</th><td>hasta 20 km/h</td><td>20 a 25 km/h</td><td>más de 25 km/h</td></tr>
+                    <tr><th scope="row">Delta T</th><td>2 a 8 °C</td><td>menos de 2 o 8 a 10 °C</td><td>más de 10 °C</td></tr>
+                    <tr><th scope="row">Temperatura</th><td>hasta 28 °C</td><td>28 a 32 °C</td><td>más de 32 °C</td></tr>
+                    <tr><th scope="row">Humedad</th><td>50 % o más</td><td>40 a 50 %</td><td>menos de 40 %</td></tr>
+                    <tr><th scope="row">Lluvia</th><td>menos de 30 % en 3 h</td><td>30 a 60 %</td><td>más de 60 % o lloviendo</td></tr>
+                  </tbody>
+                </table>
+                <p class="pendiente">[PENDIENTE: confirmar estos umbrales con ustedes y su asesor]</p>
+                <p style="margin-top:10px">Cada hora toma el peor estado de todas las variables. Delta T es la diferencia entre la temperatura del aire y la de bulbo húmedo: indica qué tan rápido se evapora la gota.</p>
+              </div>
+            </details>
+            <details class="desplegable">
+              <summary>Ver los datos en una tabla <svg aria-hidden="true"><use href="#i-abajo"/></svg></summary>
+              <div class="desplegable__cuerpo tabla-scroll" data-tabla></div>
+            </details>
+          </div>
+          <div class="tablero__cierre">
+            <p class="aviso">Guía orientativa con pronóstico para Lima, Zárate. En tu lote las condiciones pueden cambiar: antes de cada vuelo medimos viento, temperatura y humedad, y la decisión final es del aplicador junto con la receta agronómica.</p>
+            <a class="btn btn--lima" href="https://wa.me/5493487217345?text=Hola%20AgroAtom%2C%20quiero%20cotizar%20una%20aplicaci%C3%B3n%20para%20___%20ha%20de%20___%20en%20___" data-wa>Reservá tu ventana <svg aria-hidden="true"><use href="#i-flecha"/></svg></a>
+          </div>
+          <p class="fuente" data-fuente>Datos: <a href="https://open-meteo.com/" rel="noopener">Open-Meteo.com</a> (CC BY 4.0), modelo de pronóstico para la zona.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="seccion seccion--suave" id="campo" aria-labelledby="campo-t">
+  <section class="seccion seccion--suave" id="por-que" aria-labelledby="por-que-t">
     <div class="contenedor">
-      <header class="seccion-cab seccion-cab--doble">
-        <div>
-          <p class="etiqueta">AgroAtom en el campo</p>
-          <h2 class="titulo" id="campo-t"><span>Trabajo real.</span><span class="acento">Tecnología real.</span></h2>
-        </div>
-        <p>Fotos de nuestro equipo trabajando en lotes de la zona.</p>
+      <header class="seccion-cab">
+        <p class="etiqueta">Por qué con drone</p>
+        <h2 class="titulo" id="por-que-t"><span>Sin huellas en el lote.</span><span class="acento">Sin esperar a que se seque.</span></h2>
       </header>
-      <ul class="galeria">
-        <li class="galeria__grande"><span>El T50 trabajando</span><em>[PENDIENTE: foto]</em></li>
-        <li><span>Carga del tanque</span><em>[PENDIENTE: foto]</em></li>
-        <li><span>Preparando una aplicación</span><em>[PENDIENTE: foto]</em></li>
-        <li><span>El despegue</span><em>[PENDIENTE: foto]</em></li>
-        <li><span>El lote terminado</span><em>[PENDIENTE: foto]</em></li>
+      <p class="seccion-intro">Lo que cambia frente al mosquito, con datos de ensayos y del fabricante.</p>
+      <ul class="beneficios">
+        <li><span class="beneficio__icono" aria-hidden="true"><svg><use href="#i-sin-huella"/></svg></span><h3>Sin pisoteo</h3><p class="dato">1,7 %</p><p>Es lo que se perdió de rinde, en promedio, por la huella del mosquito en soja de fin de ciclo: unos 75 kg/ha en lotes de 3,5 t/ha. Con drone no entran ruedas.</p><cite>Ensayo publicado en FAVE Ciencias Agrarias (UNL) [1]</cite></li>
+        <li><span class="beneficio__icono" aria-hidden="true"><svg><use href="#i-agua"/></svg></span><h3>Entra con el lote anegado</h3><p>Como no depende del piso, se puede aplicar con barro o agua, cuando el terrestre no entra y la ventana se pierde. Tampoco compacta el suelo.</p><cite>AgroSpray [4]</cite></li>
+        <li><span class="beneficio__icono" aria-hidden="true"><svg><use href="#i-alto"/></svg></span><h3>Llega adentro del cultivo</h3><p>La corriente de aire de los rotores empuja la gota hacia abajo: llega a la parte media y baja de la planta.</p><cite>DJI [2]</cite></li>
+        <li><span class="beneficio__icono" aria-hidden="true"><svg><use href="#i-gota"/></svg></span><h3>Mucha menos agua</h3><p class="dato">10 a 20 L/ha</p><p>Es el volumen habitual con drone en soja y maíz (siempre lo que indique el marbete). Menos viajes de agua al lote.</p><cite>Redagrícola [5]</cite></li>
+        <li><span class="beneficio__icono" aria-hidden="true"><svg><use href="#i-relieve"/></svg></span><h3>Sigue el relieve y esquiva obstáculos</h3><p>Mantiene la altura sobre el cultivo en lomas y bajos y detecta árboles, postes y tendidos.</p><cite>DJI [2]</cite></li>
+        <li><span class="beneficio__icono" aria-hidden="true"><svg><use href="#i-escudo"/></svg></span><h3>El aplicador, lejos del producto</h3><p>Se vuela a distancia, así que hay menos exposición del operario que en un equipo terrestre.</p><cite>Redagrícola [5]</cite></li>
+      </ul>
+
+      <div class="conviene">
+        <div class="conviene__col">
+          <h3><svg aria-hidden="true"><use href="#i-ok"/></svg>Cuándo conviene el drone</h3>
+          <ul>
+            <li>Lotes con exceso de agua o piso blando, donde no entra el terrestre [4].</li>
+            <li>Cultivos altos o en fin de ciclo, donde la huella cuesta rinde [1].</li>
+            <li>Lotes chicos, irregulares, con pendientes o de difícil acceso [4].</li>
+            <li>Aplicaciones puntuales en focos de plagas o enfermedades [4].</li>
+            <li>Ventanas de aplicación cortas, cuando no conseguís equipo a tiempo.</li>
+          </ul>
+        </div>
+        <div class="conviene__col conviene__col--no">
+          <h3><svg aria-hidden="true"><use href="#i-prec"/></svg>Cuándo te conviene otro equipo</h3>
+          <ul>
+            <li>Lotes grandes y secos donde el mosquito entra sin problema: el drone lleva 40 L por vuelo y depende de las baterías, y un terrestre hace más hectáreas por día [4].</li>
+            <li>Días con viento o lluvia: afectan la calidad de la aplicación, y en ese caso reprogramamos [4].</li>
+            <li>Productos que no tienen autorizado el uso con drone. Desde septiembre de 2026 el SENASA autoriza estos usos caso por caso, con un trámite que se inicia en la provincia [6].</li>
+            <li>Productos que piden mucho caldo por hectárea: con drone se puede, pero rinde menos hectáreas por hora [5].</li>
+          </ul>
+          <p class="conviene__nota">Si tu caso es de este lado, te lo decimos antes de cotizar.</p>
+        </div>
+      </div>
+      <p class="deriva"><strong>Sobre la deriva:</strong> el INTA advierte que en los drones es común una proporción alta de gotas de menos de 250 micrones, que el viento se lleva con más facilidad, y por eso hay que conocer el tamaño real de gota con el que se trabaja [3]. Nosotros regulamos la gota según el producto, miramos el Delta T y no volamos con viento fuera de rango.</p>
+      <details class="desplegable fuentes">
+        <summary>Fuentes <svg aria-hidden="true"><use href="#i-abajo"/></svg></summary>
+        <ol>
+          <li><a href="https://portal.amelica.org/ameli/journal/586/5864885011/html/" rel="noopener">Efecto de la pisada de la pulverizadora sobre el rendimiento del cultivo de soja en aplicaciones de fin de ciclo</a>, FAVE Sección Ciencias Agrarias, Universidad Nacional del Litoral.</li>
+          <li><a href="https://ag.dji.com/newsroom/agras-t50-top-features" rel="noopener">Agras T50: funciones principales</a> y <a href="https://ag.dji.com/t50/specs" rel="noopener">especificaciones</a>, DJI.</li>
+          <li><a href="https://bichosdecampo.com/para-empezar-a-ordenar-el-uso-de-drones-aplicadores-y-estudiar-su-deriva-especialistas-del-inta-presentan-un-protocolo-propio-queremos-sacarle-jugo-a-lo-que-aprendamos-explica-uno/" rel="noopener">Protocolo del INTA para medir la deriva de drones aplicadores</a>, Bichos de Campo.</li>
+          <li><a href="https://agrospray.com.ar/blog/dron-pulverizador-para-todos-los-cultivos/" rel="noopener">Dron pulverizador: ¿es recomendable para todos los cultivos?</a>, AgroSpray.</li>
+          <li><a href="https://redagricola.com/aspectos-tecnicos-clave-para-una-aplicacion-eficiente-con-drones/" rel="noopener">Aspectos técnicos clave para una aplicación eficiente con drones</a>, Redagrícola.</li>
+          <li><a href="https://www.cira.org.ar/es/servicios/normativas-servicios/resolucion/resolucion-869-2026/" rel="noopener">Resolución 869/2026 del SENASA</a>.</li>
+        </ol>
+      </details>
+    </div>
+  </section>
+
+  <section class="seccion" id="como-trabajamos" aria-labelledby="como-t">
+    <div class="contenedor">
+      <header class="seccion-cab">
+        <p class="etiqueta">Cómo trabajamos</p>
+        <h2 class="titulo" id="como-t"><span>De tu mensaje al informe,</span><span class="acento">en cuatro pasos.</span></h2>
+      </header>
+      <ol class="pasos">
+        <li><span class="paso__n">1</span><h3>Nos contactás</h3><p>Pasanos por WhatsApp la ubicación del lote, las hectáreas, el cultivo y qué hay que aplicar.</p></li>
+        <li><span class="paso__n">2</span><h3>Receta y plan de vuelo</h3><p>Con la receta agronómica armamos el plan: mapa del lote, obstáculos y pronóstico.</p></li>
+        <li><span class="paso__n">3</span><h3>Aplicación</h3><p>Volamos controlando viento, temperatura y humedad antes y durante el trabajo.</p></li>
+        <li><span class="paso__n">4</span><h3>Informe</h3><p>Te pasamos el registro de lo aplicado: superficie, dosis y recorrido.</p></li>
+      </ol>
+      <p class="pendiente-txt pendiente-txt--bloque">[PENDIENTE: confirmar que estos pasos son como trabajan]</p>
+    </div>
+  </section>
+
+  <section class="seccion seccion--suave" id="nosotros" aria-labelledby="nosotros-t">
+    <div class="contenedor nosotros">
+      <figure class="nosotros__foto">
+        <div class="foto-pendiente">
+          <img src="img/logo-original.webp" width="217" height="200" alt="" loading="lazy">
+          <p>[PENDIENTE: foto de los dos con el T50]</p>
+        </div>
+      </figure>
+      <div class="nosotros__texto">
+        <p class="etiqueta">Quiénes somos</p>
+        <h2 class="titulo" id="nosotros-t"><span>Somos de Lima, Zárate.</span><span class="acento">Hablás con los que vuelan.</span></h2>
+        <p>Somos dos y los dos tenemos licencia de piloto provincial. Uno vuela y el otro se ocupa de <span class="pendiente-txt">[PENDIENTE: por ejemplo la planificación, la logística y la atención]</span>.</p>
+        <p>Arrancamos en septiembre de 2025 con un DJI Agras T50. Cada aplicación la hacemos nosotros: el que te contesta el WhatsApp es el mismo que planifica el vuelo y está en tu lote.</p>
+        <ul class="nosotros__datos">
+          <li><strong>2</strong><span>pilotos con licencia provincial</span></li>
+          <li><strong>2025</strong><span>empezamos en septiembre</span></li>
+          <li><strong>Lima</strong><span>base en Cuartel V, Zárate</span></li>
+        </ul>
+        <p class="pendiente-txt">[PENDIENTE: nombres de los dos]</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion" id="zona" aria-labelledby="zona-t">
+    <div class="contenedor zona">
+      <div class="zona__texto">
+        <p class="etiqueta">Zona de cobertura</p>
+        <h2 class="titulo" id="zona-t"><span>100 km a la redonda</span><span class="acento">desde Zárate.</span></h2>
+        <p>Trabajamos en la provincia de Buenos Aires, dentro de un radio de 100 km de Zárate. Estas son algunas de las localidades, con la distancia en línea recta:</p>
+        <ul class="zona__lista"><li><span>Zárate</span><b></b></li><li><span>Campana</span><b>10 km</b></li><li class="es-base"><span>Lima</span><b>base</b></li><li><span>Capilla del Señor</span><b>23 km</b></li><li><span>Escobar</span><b>35 km</b></li><li><span>Pilar</span><b>41 km</b></li><li><span>San Antonio de Areco</span><b>44 km</b></li><li><span>Luján</span><b>53 km</b></li><li><span>San Andrés de Giles</span><b>55 km</b></li><li><span>Baradero</span><b>55 km</b></li><li><span>General Rodríguez</span><b>57 km</b></li><li><span>Capitán Sarmiento</span><b>71 km</b></li><li><span>Mercedes</span><b>72 km</b></li><li><span>San Pedro</span><b>75 km</b></li><li><span>Carmen de Areco</span><b>80 km</b></li><li><span>Arrecifes</span><b>99 km</b></li></ul>
+        <p class="pendiente-txt">[PENDIENTE: confirmar la lista y si trabajan en Entre Ríos]</p>
+        <a class="btn btn--lima" href="https://wa.me/5493487217345?text=Hola%20AgroAtom%2C%20quiero%20cotizar%20una%20aplicaci%C3%B3n%20para%20___%20ha%20de%20___%20en%20___" data-wa>¿Tu lote está en la zona? Consultá <svg aria-hidden="true"><use href="#i-flecha"/></svg></a>
+      </div>
+      <div class="zona__mapa"><svg class="mapa-zona" viewBox="0 0 640 640" role="img" aria-labelledby="mapa-zona-t">
+<title id="mapa-zona-t">Mapa orientativo: radio de 100 km alrededor de Zárate con las localidades de la zona</title>
+<defs><radialGradient id="radar-barrido" cx="0" cy="0" r="1"><stop offset="0" stop-color="currentColor" stop-opacity=".0"/><stop offset="1" stop-color="currentColor" stop-opacity=".22"/></radialGradient></defs>
+<g class="radar">
+<path d="M320 320 L320 45 A275 275 0 0 1 481.6 97.5Z" class="barrido"/>
+</g>
+<path d="M45 320H595M320 45V595" class="cruz"/>
+<circle cx="320" cy="320" r="68.8" class="anillo"/><text x="326" y="245.3" class="anillo__km">25 km</text><circle cx="320" cy="320" r="137.5" class="anillo"/><text x="326" y="176.5" class="anillo__km">50 km</text><circle cx="320" cy="320" r="206.3" class="anillo"/><text x="326" y="107.8" class="anillo__km">75 km</text><circle cx="320" cy="320" r="275" class="anillo anillo--limite"/><text x="326" y="39" class="anillo__km">100 km</text>
+<g class="loc"><circle cx="320" cy="320" r="4"/><text x="330" y="324" text-anchor="start">Zárate</text></g><g class="loc"><circle cx="337" cy="341.4" r="4"/><text x="347" y="345.4" text-anchor="start">Campana</text></g><g class="loc loc--base"><circle cx="276.4" cy="303.2" r="6"/><text x="266.4" y="307.2" text-anchor="end">Lima</text></g><g class="loc"><circle cx="300.2" cy="379.4" r="4"/><text x="310.2" y="383.4" text-anchor="start">Capilla del Señor</text></g><g class="loc"><circle cx="377.8" cy="396.2" r="4"/><text x="387.8" y="400.2" text-anchor="start">Escobar</text></g><g class="loc"><circle cx="348.1" cy="430.5" r="4"/><text x="358.1" y="434.5" text-anchor="start">Pilar</text></g><g class="loc"><circle cx="206.9" cy="365.3" r="4"/><text x="196.9" y="369.3" text-anchor="end">San Antonio de Areco</text></g><g class="loc"><circle cx="299.7" cy="464.5" r="4"/><text x="289.7" y="468.5" text-anchor="end">Luján</text></g><g class="loc"><circle cx="213.5" cy="427.1" r="4"/><text x="203.5" y="431.1" text-anchor="end">San Andrés de Giles</text></g><g class="loc"><circle cx="198.1" cy="232.1" r="4"/><text x="208.1" y="236.1" text-anchor="start">Baradero</text></g><g class="loc"><circle cx="338.5" cy="476.1" r="4"/><text x="348.5" y="480.1" text-anchor="start">General Rodríguez</text></g><g class="loc"><circle cx="126.1" cy="342.7" r="4"/><text x="136.1" y="346.7" text-anchor="start">Capitán Sarmiento</text></g><g class="loc"><circle cx="217.1" cy="489.3" r="4"/><text x="207.1" y="493.3" text-anchor="end">Mercedes</text></g><g class="loc"><circle cx="157.5" cy="191.7" r="4"/><text x="167.5" y="195.7" text-anchor="start">San Pedro</text></g><g class="loc"><circle cx="117.5" cy="405.4" r="4"/><text x="127.5" y="409.4" text-anchor="start">Carmen de Areco</text></g><g class="loc"><circle cx="46.7" cy="309.9" r="4"/><text x="56.7" y="313.9" text-anchor="start">Arrecifes</text></g>
+</svg><p class="zona__nota">Mapa orientativo. Distancias en línea recta.</p></div>
+    </div>
+  </section>
+
+  <section class="seccion seccion--suave" id="habilitaciones" aria-labelledby="hab-t">
+    <div class="contenedor">
+      <header class="seccion-cab">
+        <p class="etiqueta">Seguridad y habilitaciones</p>
+        <h2 class="titulo" id="hab-t"><span>Todo en regla,</span><span class="acento">en cada aplicación.</span></h2>
+      </header>
+      <ul class="habilitaciones">
+        <li><svg aria-hidden="true"><use href="#i-licencia"/></svg><h3>Licencia de piloto provincial</h3><p>Los dos integrantes.</p></li>
+        <li><svg aria-hidden="true"><use href="#i-escudo"/></svg><h3>Habilitación de fitosanitarios</h3><p>Para transporte y aplicación.</p></li>
+        <li><svg aria-hidden="true"><use href="#i-seguro"/></svg><h3>Seguro</h3><p><span class="pendiente-txt">[PENDIENTE: tipo de seguro]</span></p></li>
+        <li><svg aria-hidden="true"><use href="#i-receta"/></svg><h3>Receta agronómica</h3><p>Aplicamos siempre con receta.</p></li>
+        <li><svg aria-hidden="true"><use href="#i-viento"/></svg><h3>Control de clima</h3><p>Viento, temperatura y humedad antes de cada vuelo.</p></li>
       </ul>
     </div>
   </section>
 
-  <section class="seccion" id="nosotros" aria-labelledby="nosotros-t">
-    <div class="contenedor dos-col">
-      <figure class="foto-marco foto-marco--pendiente">
-        <img src="img/logo-original.webp" width="217" height="200" alt="" loading="lazy">
-        <figcaption>[PENDIENTE: foto de los dos con el equipo]</figcaption>
-      </figure>
-      <div class="bloque">
-        <p class="etiqueta">Nosotros</p>
-        <h2 class="titulo" id="nosotros-t"><span>Somos AgroAtom.</span></h2>
-        <p>Somos un equipo dedicado a incorporar tecnología de precisión al trabajo agrícola.</p>
-        <p>AgroAtom nació en Zárate con la visión de aprovechar las posibilidades que ofrecen los drones para desarrollar nuevas formas de trabajar sobre el campo.</p>
-        <ul class="equipo">
-          <li><strong>Matías</strong><span>Dirección y operaciones <em class="pendiente-txt">[PENDIENTE: confirmar]</em></span></li>
-          <li><strong>Franco</strong><span>Operaciones <em class="pendiente-txt">[PENDIENTE: rol]</em></span></li>
-        </ul>
-        <ul class="credenciales">
-          <li><svg aria-hidden="true"><use href="#i-licencia"/></svg>Los dos con licencia de piloto provincial</li>
-          <li><svg aria-hidden="true"><use href="#i-escudo"/></svg>Habilitación de transporte y aplicación de fitosanitarios</li>
-          <li><svg aria-hidden="true"><use href="#i-reloj"/></svg>Trabajando desde septiembre de 2025</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="seccion seccion--suave" id="preguntas" aria-labelledby="preguntas-t">
+  <section class="seccion" id="preguntas" aria-labelledby="preguntas-t">
     <div class="contenedor preguntas">
       <header class="seccion-cab">
         <p class="etiqueta">Preguntas frecuentes</p>
-        <h2 class="titulo" id="preguntas-t"><span>¿Tenés una duda</span><span class="acento">puntual?</span></h2>
-        <p class="pendiente-txt">[PENDIENTE: confirmar las respuestas]</p>
+        <h2 class="titulo" id="preguntas-t"><span>Lo que nos preguntan</span><span class="acento">antes de contratar.</span></h2>
+        <p class="pendiente-txt">[PENDIENTE: confirmar todas las respuestas]</p>
       </header>
       <div class="acordeon">
-        <details class="desplegable"><summary>¿Qué tipo de aplicaciones realizan? <svg aria-hidden="true"><use href="#i-abajo"/></svg></summary><div class="desplegable__cuerpo"><p>Pulverización, fertilización y siembra.</p></div></details>
-        <details class="desplegable"><summary>¿Hasta dónde trabajan? <svg aria-hidden="true"><use href="#i-abajo"/></svg></summary><div class="desplegable__cuerpo"><p>Zárate y localidades de la zona, con posibilidad de trasladarnos según el trabajo.</p></div></details>
-        <details class="desplegable"><summary>¿El drone puede trabajar después de una lluvia? <svg aria-hidden="true"><use href="#i-abajo"/></svg></summary><div class="desplegable__cuerpo"><p>Puede ser una alternativa cuando las condiciones del terreno dificultan el ingreso de maquinaria terrestre, siempre evaluando las condiciones de aplicación.</p></div></details>
-        <details class="desplegable"><summary>¿Cuánto puede cubrir? <svg aria-hidden="true"><use href="#i-abajo"/></svg></summary><div class="desplegable__cuerpo"><p>DJI indica hasta 21 ha por hora en cultivos extensivos y en condiciones ideales. En cada lote depende de la dosis, la forma del lote, los obstáculos y dónde se recarga. <span class="pendiente-txt">[PENDIENTE: hectáreas por día que hacen ustedes]</span></p></div></details>
-        <details class="desplegable"><summary>¿El vuelo es automático? <svg aria-hidden="true"><use href="#i-abajo"/></svg></summary><div class="desplegable__cuerpo"><p>Sí. El T50 sigue una ruta planificada sobre el mapa del lote, con los parámetros de aplicación cargados. El piloto supervisa todo el vuelo y puede tomar el control en cualquier momento.</p></div></details>
-        <details class="desplegable"><summary>¿Qué condiciones climáticas se necesitan? <svg aria-hidden="true"><use href="#i-abajo"/></svg></summary><div class="desplegable__cuerpo"><p>Viento moderado, sin lluvia y con temperatura y humedad adecuadas para que la gota no se evapore ni se desvíe. Antes de cada vuelo lo medimos en el lote. Mirá la sección <a href="#clima">del clima</a>.</p></div></details>
-        <details class="desplegable"><summary>¿Necesito receta agronómica? <svg aria-hidden="true"><use href="#i-abajo"/></svg></summary><div class="desplegable__cuerpo"><p>Sí. Las aplicaciones de fitosanitarios las hacemos siempre con receta agronómica.</p></div></details>
+        <details class="desplegable"><summary>¿Cuántas hectáreas hacen por día? <svg aria-hidden="true"><use href="#i-abajo"/></svg></summary><div class="desplegable__cuerpo"><p>Depende de la dosis, del tamaño y la forma del lote, de los obstáculos y de dónde podemos recargar. DJI indica hasta 21 ha por hora en condiciones ideales; para tu lote te damos un número cuando lo vemos. <span class="pendiente-txt">[PENDIENTE: hectáreas por día que hacen ustedes]</span></p></div></details>
+        <details class="desplegable"><summary>¿Cuánto cuesta por hectárea? <svg aria-hidden="true"><use href="#i-abajo"/></svg></summary><div class="desplegable__cuerpo"><p>No tenemos un precio fijo: depende de las hectáreas, la dosis, el producto, la distancia desde Lima y si el lote tiene obstáculos. Pasanos los datos por WhatsApp y te cotizamos. <span class="pendiente-txt">[PENDIENTE: si hay mínimo de hectáreas o costo de traslado]</span></p></div></details>
+        <details class="desplegable"><summary>¿Qué productos aplican? <svg aria-hidden="true"><use href="#i-abajo"/></svg></summary><div class="desplegable__cuerpo"><p>Herbicidas, fungicidas, insecticidas, fertilizantes foliares, fertilizantes granulados y semillas para siembra al voleo. Siempre con receta y con productos que admiten aplicación con drone.</p></div></details>
+        <details class="desplegable"><summary>¿Qué pasa si hay viento o llueve? <svg aria-hidden="true"><use href="#i-abajo"/></svg></summary><div class="desplegable__cuerpo"><p>No aplicamos: reprogramamos para la próxima ventana buena. Antes de cada vuelo medimos viento, temperatura y humedad en el lote. <span class="pendiente-txt">[PENDIENTE: límite de viento que usan]</span></p></div></details>
+        <details class="desplegable"><summary>¿Necesito receta agronómica? <svg aria-hidden="true"><use href="#i-abajo"/></svg></summary><div class="desplegable__cuerpo"><p>Sí. Para aplicar fitosanitarios trabajamos siempre con receta agronómica de un ingeniero agrónomo. <span class="pendiente-txt">[PENDIENTE: qué hacen si el productor no tiene asesor]</span></p></div></details>
+        <details class="desplegable"><summary>¿Qué datos necesitan para cotizar? <svg aria-hidden="true"><use href="#i-abajo"/></svg></summary><div class="desplegable__cuerpo"><p>La ubicación del lote (sirve un link de Google Maps), las hectáreas, el cultivo y en qué estado está, qué hay que aplicar con la dosis de la receta, y para cuándo lo necesitás.</p></div></details>
+        <details class="desplegable"><summary>¿Tienen seguro y habilitación? <svg aria-hidden="true"><use href="#i-abajo"/></svg></summary><div class="desplegable__cuerpo"><p>Sí. Los dos tenemos licencia de piloto provincial y la habilitación de transporte y aplicación de fitosanitarios. <span class="pendiente-txt">[PENDIENTE: tipo de seguro]</span></p></div></details>
+        <details class="desplegable"><summary>¿Hasta dónde viajan? <svg aria-hidden="true"><use href="#i-abajo"/></svg></summary><div class="desplegable__cuerpo"><p>Hasta 100 km a la redonda de Zárate, en la provincia de Buenos Aires. Mirá el <a href="#zona">mapa de cobertura</a>.</p></div></details>
       </div>
     </div>
   </section>
 
-  <section class="seccion" id="contacto" aria-labelledby="contacto-t">
+  <section class="banner" aria-labelledby="banner-t">
+    <div class="contenedor">
+      <div class="banner__caja">
+        <div class="banner__foto" aria-hidden="true"><span class="pendiente-txt">[PENDIENTE: foto del T50 al atardecer o del lote terminado]</span></div>
+        <div class="banner__texto">
+          <h2 class="titulo" id="banner-t"><span>Hagamos tu</span><span class="acento">próxima aplicación.</span></h2>
+          <p>Contanos qué lote, qué cultivo y qué hay que aplicar. Te respondemos nosotros mismos.</p>
+          <a class="btn btn--lima" href="https://wa.me/5493487217345?text=Hola%20AgroAtom%2C%20quiero%20cotizar%20una%20aplicaci%C3%B3n%20para%20___%20ha%20de%20___%20en%20___" data-wa>Escribinos por WhatsApp <svg aria-hidden="true"><use href="#i-flecha"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion seccion--suave" id="contacto" aria-labelledby="contacto-t">
     <div class="contenedor contacto">
       <div class="contacto__texto">
         <p class="etiqueta">Contacto</p>
-        <h2 class="titulo" id="contacto-t"><span>¿Querés conocer más</span><span class="acento">sobre AgroAtom?</span></h2>
-        <button class="btn btn--lima" type="button" aria-expanded="false" aria-controls="cotizacion" data-abrir>Solicitar cotización <svg aria-hidden="true"><use href="#i-flecha"/></svg></button>
+        <h2 class="titulo" id="contacto-t"><span>Pedí tu cotización.</span><span class="acento">Te contestamos nosotros.</span></h2>
+        <a class="btn btn--lima btn--grande" href="https://wa.me/5493487217345?text=Hola%20AgroAtom%2C%20quiero%20cotizar%20una%20aplicaci%C3%B3n%20para%20___%20ha%20de%20___%20en%20___" data-wa><svg aria-hidden="true"><use href="#i-whatsapp"/></svg>Escribinos por WhatsApp</a>
+        <p class="contacto__nota">El mensaje ya va escrito: completás las hectáreas, el cultivo y la localidad.</p>
+        <ul class="contacto__datos">
+          <li><svg aria-hidden="true"><use href="#i-telefono"/></svg><span>Teléfono y WhatsApp</span><strong><a href="tel:+5493487217345" data-evento="telefono">+54 9 3487 21-7345</a></strong></li>
+          <li><svg aria-hidden="true"><use href="#i-mail"/></svg><span>Email</span><strong><a href="mailto:agroatom00@gmail.com">agroatom00@gmail.com</a></strong></li>
+          <li><svg aria-hidden="true"><use href="#i-instagram"/></svg><span>Instagram</span><strong><a href="https://www.instagram.com/agro.atom/" rel="noopener">@agro.atom</a></strong></li>
+          <li><svg aria-hidden="true"><use href="#i-pin"/></svg><span>Base</span><strong>Cuartel V, Lima, partido de Zárate, Buenos Aires</strong></li>
+          <li><svg aria-hidden="true"><use href="#i-reloj"/></svg><span>Horario</span><strong class="pendiente-txt">[PENDIENTE]</strong></li>
+        </ul>
       </div>
-      <ul class="contacto__datos">
-        <li><svg aria-hidden="true"><use href="#i-whatsapp"/></svg><span>WhatsApp</span><strong><a href="https://wa.me/5493487217345?text=Hola%20AgroAtom%2C%20quiero%20cotizar%20una%20aplicaci%C3%B3n%20para%20___%20ha%20de%20___%20en%20___" data-wa>+54 9 3487 21-7345</a></strong></li>
-        <li><svg aria-hidden="true"><use href="#i-instagram"/></svg><span>Instagram</span><strong><a href="https://www.instagram.com/agro.atom/" rel="noopener">@agro.atom</a></strong></li>
-        <li><svg aria-hidden="true"><use href="#i-mail"/></svg><span>Email</span><strong><a href="mailto:agroatom00@gmail.com">agroatom00@gmail.com</a></strong></li>
-        <li><svg aria-hidden="true"><use href="#i-pin"/></svg><span>Ubicación</span><strong>Zárate, Buenos Aires</strong></li>
-      </ul>
-      <form class="form" id="cotizacion" data-form novalidate hidden>
-        <h3>Solicitar cotización</h3>
+      <form class="form" data-form novalidate>
+        <h3>O dejanos tus datos</h3>
         <div class="form__grilla">
           <label class="campo"><span>Nombre</span><input id="form-nombre" name="nombre" autocomplete="name" required></label>
           <label class="campo"><span>Teléfono</span><input id="form-telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" required></label>
           <label class="campo"><span>Localidad</span><input id="form-localidad" name="localidad" autocomplete="address-level2" required></label>
           <label class="campo"><span>Cultivo</span><select id="form-cultivo" name="cultivo"><option value="">Elegí</option><option>Soja</option><option>Maíz</option><option>Trigo</option><option>Girasol</option><option>Pasturas</option><option>Frutales</option><option>Otro</option></select></label>
           <label class="campo"><span>Hectáreas</span><input id="form-hectareas" name="hectareas" type="number" min="1" inputmode="numeric"></label>
-          <label class="campo"><span>Servicio</span><select id="form-servicio" name="servicio"><option value="">Elegí</option><option>Pulverización</option><option>Fertilización</option><option>Siembra</option></select></label>
+          <label class="campo"><span>Servicio</span><select id="form-servicio" name="servicio"><option value="">Elegí</option><option>Pulverización</option><option>Fertilización foliar</option><option>Fertilizantes granulados</option><option>Siembra al voleo</option></select></label>
           <label class="campo campo--ancho"><span>Mensaje</span><textarea id="form-mensaje" name="mensaje" rows="3"></textarea></label>
           <label class="trampa" aria-hidden="true">No completar<input id="form-web" name="web" tabindex="-1" autocomplete="off"></label>
         </div>
-        <button class="btn btn--lima" type="submit">Enviar <svg aria-hidden="true"><use href="#i-flecha"/></svg></button>
+        <button class="btn btn--lima" type="submit">Enviar consulta <svg aria-hidden="true"><use href="#i-flecha"/></svg></button>
         <p class="form__estado" data-form-estado role="status"></p>
-        <p class="form__legal">Llega a agroatom00@gmail.com. Usamos tus datos solo para responderte. <span class="pendiente-txt">[PENDIENTE: link a la política de privacidad]</span></p>
+        <p class="form__legal">Tu consulta llega a agroatom00@gmail.com. Usamos tus datos solo para responderte. <span class="pendiente-txt">[PENDIENTE: link a la política de privacidad]</span></p>
       </form>
     </div>
   </section>
+
+
 
 </main>
 
@@ -536,14 +657,14 @@
   <div class="contenedor pie__in">
     <div class="pie__marca">
       <img src="img/logo-original.webp" width="217" height="200" alt="AgroAtom" loading="lazy">
-      <p>Aplicaciones agrícolas aéreas con drones. Zárate, Buenos Aires.</p>
+      <p>Aplicación aérea con drones en Zárate y zona, con DJI Agras T50.</p>
     </div>
     <div class="pie__col">
       <h2>Contacto</h2>
       <ul>
-        <li><a href="https://wa.me/5493487217345?text=Hola%20AgroAtom%2C%20quiero%20cotizar%20una%20aplicaci%C3%B3n%20para%20___%20ha%20de%20___%20en%20___" data-wa>WhatsApp +54 9 3487 21-7345</a></li>
-        <li><a href="mailto:agroatom00@gmail.com">agroatom00@gmail.com</a></li>
-        <li><a class="pie__red" href="https://www.instagram.com/agro.atom/" rel="noopener"><svg aria-hidden="true"><use href="#i-instagram"/></svg>@agro.atom</a></li>
+        <li>WhatsApp: <a href="https://wa.me/5493487217345?text=Hola%20AgroAtom%2C%20quiero%20cotizar%20una%20aplicaci%C3%B3n%20para%20___%20ha%20de%20___%20en%20___" data-wa>+54 9 3487 21-7345</a></li>
+        <li>Email: <a href="mailto:agroatom00@gmail.com">agroatom00@gmail.com</a></li>
+        <li>Cuartel V, Lima, partido de Zárate, Buenos Aires</li>
       </ul>
     </div>
     <div class="pie__col">
@@ -554,6 +675,10 @@
         <li>Seguro: <span class="pendiente-txt">[PENDIENTE]</span></li>
       </ul>
     </div>
+    <div class="pie__col">
+      <h2>Redes</h2>
+      <ul><li><a class="pie__red" href="https://www.instagram.com/agro.atom/" rel="noopener"><svg aria-hidden="true"><use href="#i-instagram"/></svg>@agro.atom</a></li></ul>
+    </div>
   </div>
   <div class="contenedor pie__legal">
     <p>© <span data-anio>2026</span> AgroAtom · CUIT 20-48036218-8</p>
@@ -561,6 +686,15 @@
   </div>
 </footer>
 
+<a class="wa-flotante" href="https://wa.me/5493487217345?text=Hola%20AgroAtom%2C%20quiero%20cotizar%20una%20aplicaci%C3%B3n%20para%20___%20ha%20de%20___%20en%20___" data-wa aria-label="Escribinos por WhatsApp"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg></a>
+
+<dialog class="dialogo" data-dialogo-video aria-labelledby="video-t">
+  <div class="dialogo__cab">
+    <h2 id="video-t" style="font-size:1rem">Cómo trabajamos</h2>
+    <button class="icono-btn" type="button" data-cerrar aria-label="Cerrar video"><svg aria-hidden="true"><use href="#i-cerrar"/></svg></button>
+  </div>
+  <div class="dialogo__video" data-video-cont>[PENDIENTE: video corto de una aplicación con el T50. Se carga recién cuando tocás el botón.]</div>
+</dialog>
 
 <script src="boceto.js" defer></script>
 </body>

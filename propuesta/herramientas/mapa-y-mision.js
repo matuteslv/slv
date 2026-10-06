@@ -111,26 +111,5 @@ const mision = `<svg class="mision__mapa" viewBox="0 0 ${W} ${H}" role="img" ari
 <g class="mision__ref"><text x="70" y="330">Cortina de árboles</text><text x="470" y="322" text-anchor="end">Tendido eléctrico</text></g>
 </svg>`;
 
-// ---------- 3. Mapa animado de "Cómo trabaja un dron agrícola" ----------
-// Mismo lote de ejemplo. La animación (boceto.js) dibuja el lote, muestra la ruta, mueve el drone
-// por la ruta pintando lo aplicado y al final marca el lote como completo.
-const surcos = Array.from({ length: 30 }, (_, i) => {
-  const x = 60 + i * 14.5;
-  return `M${r1(x)} ${r1(44 - i * 0.4)}L${r1(x + 18)} ${r1(306 - i * 0.1)}`;
-}).join('');
-const dronArriba = [[-9, -9], [9, -9], [-9, 9], [9, 9]].map(([x, y]) => `<circle cx="${x}" cy="${y}" r="6.5" class="f-rotor"/>`).join('')
-  + '<path d="M-9 -9L9 9M9 -9L-9 9" class="f-brazos"/><rect x="-5" y="-6" width="10" height="12" rx="3" class="f-cuerpo"/>';
-const funciona = `<svg class="f-mapa" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="f-mapa-t">
-<title id="f-mapa-t">Ejemplo animado de una aplicación: se marca el lote, se carga la ruta, el drone recorre el lote en zigzag y al final queda todo el lote cubierto</title>
-<defs><clipPath id="f-recorte"><path d="M${LOTE.map((p) => p.join(' ')).join('L')}Z"/></clipPath></defs>
-<g clip-path="url(#f-recorte)"><path d="${surcos}" class="f-surcos"/></g>
-<path d="M${TRABAJO.map((p) => p.join(' ')).join('L')}Z" class="f-area"/>
-<path d="M${LOTE.map((p) => p.join(' ')).join('L')}Z" class="f-lote" pathLength="1"/>
-<g class="f-obst">${arboles}<path d="M392 300 L500 200" class="f-tendido-zona"/><path d="M392 300 L500 200" class="f-tendido"/><rect x="405" y="280" width="8" height="8"/><rect x="461" y="228" width="8" height="8"/></g>
-<path d="${ruta}" class="f-ruta"/>
-<path d="${ruta}" class="f-hecha" pathLength="1"/>
-<g class="f-dron" transform="translate(${r1(pts[0][0])} ${r1(pts[0][1])})"><circle r="22" class="f-rocio"/><g class="f-dron-cuerpo">${dronArriba}</g></g>
-</svg>`;
-
-fs.writeFileSync(process.argv[2], JSON.stringify({ mapa, mision, funciona, lista: lista.map(({ n, d, tipo }) => ({ n, d, tipo })) }));
+fs.writeFileSync(process.argv[2], JSON.stringify({ mapa, mision, lista: lista.map(({ n, d, tipo }) => ({ n, d, tipo })) }));
 console.log(lista.map((l) => `${l.n} ${l.d} km`).join(' · '));
