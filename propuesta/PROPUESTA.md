@@ -111,41 +111,43 @@ Resultado de la validación: separación para daltonismo ΔE 8,4 en oscuro y 9,7
 - **B612 Mono** para números del tablero, etiquetas y datos. La diseñó Airbus para las pantallas de cabina de los aviones: está hecha para leer instrumentos rápido, que es justo lo que pide un tablero de vuelo y clima. 19 KB por peso.
 - Escala: H1 de 38 px (celular) a 72 px (compu), H2 de 32 a 56 px, texto de 16 a 19 px, etiquetas de 10 a 12 px en mayúsculas espaciadas.
 
-### Elementos propios
+### Estructura institucional (12 secciones, cada una responde una pregunta)
 
-- **Lomas del logo** como líneas finas en las esquinas (se ven arriba a la derecha del tablero de clima), en lugar de las hojas de la referencia.
-- **Ruta de vuelo en zigzag** en lima: se dibuja al hacer scroll en el tablero de misión de la sección Tecnología y aparece sutil como separador. Va en la versión 1.
-- **Semáforo de clima** en la portada y el tablero: es el momento "tecnológico" del sitio y además es útil de verdad.
+| # | Sección (id) | Pregunta que responde | Qué tiene |
+|---|---|---|---|
+| 1 | Portada (`inicio`) | ¿Qué hacen? | Título, bajada nueva y un solo botón "Conocé AgroAtom →". "Cotizá" queda arriba a la derecha |
+| 2 | ¿Qué es AgroAtom? (`agroatom`) | ¿Quiénes son y para qué existen? | Texto, lugar para foto real y tres datos al costado (Zárate, aplicaciones aéreas, DJI Agras T50) |
+| 3 | Del lote a la aplicación (`como-funciona`) | ¿Cómo trabaja un dron agrícola? | Pasos 01 a 04 con animación al bajar: aparece el drone, se marca la ruta, se aplica y termina el vuelo |
+| 4 | Un mismo equipo, tres trabajos (`servicios`) | ¿Qué puede hacer el T50? | Pulverización, fertilización y siembra, con dibujos de línea. Sin especificaciones |
+| 5 | Cuando el campo presenta limitaciones (`ventajas`) | ¿Por qué un dron? | Después de una lluvia, cultivos desarrollados, menor volumen de agua y zonas de difícil acceso, con dos datos con fuente |
+| 6 | DJI Agras T50 (`tecnologia`) | ¿Con qué trabajan? | Foto grande, 4 datos y "Conocer la tecnología →", que despliega el detalle con fuente de DJI |
+| 7 | Cada vuelo está planificado (`precision`) | ¿Cómo controlan el trabajo? | Mapa → ruta → parámetros → vuelo → supervisión, y el tablero "Ejemplo de misión" |
+| 8 | El clima también forma parte de la aplicación (`clima`) | ¿Cuándo se puede aplicar? | Condición (Apto / Con precaución / No recomendado), viento, temperatura y humedad. Ráfagas, Delta T y 24 horas quedan en un desplegable |
+| 9 | Trabajo real. Tecnología real. (`campo`) | ¿Esto es real? | Galería solo con fotos propias (5 lugares marcados `[PENDIENTE]`) |
+| 10 | Somos AgroAtom (`nosotros`) | ¿Quiénes están detrás? | Texto, Matías y Franco con su rol, licencias y fecha de inicio |
+| 11 | Preguntas frecuentes (`preguntas`) | ¿Y si tengo una duda puntual? | Acordeón con 7 preguntas |
+| 12 | ¿Querés conocer más sobre AgroAtom? (`contacto`) | ¿Cómo los contacto? | WhatsApp, Instagram, email y ubicación. "Solicitar cotización →" abre el formulario |
 
-### Cómo adapto cada bloque de la referencia
+Menú: Inicio · Servicios · Tecnología · Cómo funciona · Nosotros · Preguntas, y "Cotizá →".
 
-| Referencia (Zenze) | AgroAtom | En el boceto |
-|---|---|---|
-| Logo con hoja | Logo original (el sello con el drone y las "AA") con el nombre AgroAtom al lado, como pediste | Sí |
-| Productor con tablet | El T50 real (recortado de la foto) pulverizando sobre el atardecer, de fondo completo. Por ahora la foto del drone es de DJI, solo para el boceto: para publicar hace falta foto propia o permiso de DJI | Sí |
-| Píldora "Smart solutions" | "Aplicación aérea con drones · Zárate y zona" | Sí |
-| Título en dos líneas | "Precisión en cada lote." / "Sin pisar el cultivo." en lima | Sí |
-| Dos botones | "Pedí tu cotización →" (WhatsApp) y "▶ Mirá cómo trabajamos" (video que carga recién al tocar) | Sí |
-| Franja de estadísticas | 100 km, 40 L, 21 ha/h (según DJI), licencia y habilitación. Lugar oculto para hectáreas aplicadas | Sí |
-| Tarjeta "Live Farm Insights" | **"Condiciones ahora"** con semáforo, viento, temperatura, humedad y la próxima ventana buena | Sí, con datos de muestra |
-| 4 tarjetas de soluciones | 4 servicios con ícono en círculo oliva y flecha | Versión 1 |
-| Tablero "Farm Overview" | Tablero "Misión de vuelo" con mapa del lote y ruta en zigzag, marcado "Ejemplo de misión" | Versión 1 |
-| (no existe) | **Sección nueva "Clima para aplicar"** con la ventana de 24 horas (lo pediste recién) | Sí |
-| Banner final | Foto del T50 al atardecer, "Hagamos tu próxima aplicación." y WhatsApp | Versión 1 |
-| Modo claro/oscuro | Oscuro por defecto, el claro se recuerda | Sí |
+**Animaciones (solo tres, suaves):** la ruta del lote en "Cómo funciona", el anillo del tablero de misión y las barras del gráfico de clima. Con "reducir movimiento" activado en el teléfono o la compu se muestran ya terminadas.
+
+**Lo que saqué para que se vea serio y no desesperado por clientes:** botón flotante de WhatsApp, franja de estadísticas de la portada, tarjeta de clima flotando sobre la portada, indicador de "bajá", video, mapa de cobertura y banner final.
+
+**Datos corregidos del T50 (según DJI):** la carga de sólidos es de 50 kg (no 40). Los 8 m son el ancho de esparcido de sólidos; la pulverización cubre de 4 a 11 m.
 
 ### Capturas
 
 | Archivo | Qué muestra |
 |---|---|
 | `capturas/01-portada-1440.png` | Portada en compu |
-| `capturas/02-portada-375.png` | Primera pantalla en celular chico: se ve qué hacemos, dónde y el botón de cotizar sin bajar |
+| `capturas/02-portada-375.png` | Primera pantalla en celular chico: se ve qué hacen, dónde y el botón "Conocé AgroAtom" sin bajar |
 | `capturas/08-portada-360.png` | Celular de 360 px |
 | `capturas/06-portada-768.png` | Tablet |
-| `capturas/03-portada-390-completa.png` | Portada y tablero completos en celular |
-| `capturas/04-tablero-1440.png` | Tablero de clima con el tooltip de una hora |
+| `capturas/03-portada-390-completa.png` | Todo el sitio en celular |
+| `capturas/04-tablero-1440.png` | Tablero de clima con el desplegable abierto y el detalle de una hora |
 | `capturas/05-tablero-1440-claro.png` | Tablero en modo claro |
-| `capturas/07-pagina-1440-completa.png` | Todo el boceto en compu |
+| `capturas/07-pagina-1440-completa.png` | Todo el sitio en compu, con las 12 secciones |
 
 Sin errores en la consola y sin scroll horizontal en ningún tamaño.
 
@@ -214,16 +216,16 @@ Siempre a la hora dorada (amanecer o atardecer), en horizontal, con buena resolu
 | # | Toma | Para qué sección | Consejos |
 |---|---|---|---|
 | 1 | **Piloto de espaldas con el control, T50 pulverizando el cultivo a contraluz** | Portada | Sol bajo detrás del drone. Dejá el lado izquierdo del cuadro con cielo o cultivo (ahí va el texto). Sacá también una versión vertical para celular. |
-| 2 | T50 en vuelo con la nube de pulverización | Servicios, tecnología | Lateral, con el cultivo debajo. Varias tomas en ráfaga. |
+| 2 | T50 en vuelo con la nube de pulverización | Tecnología, en el campo | Lateral, con el cultivo debajo. Varias tomas en ráfaga. |
 | 3 | T50 esparciendo granulado o semilla al voleo | Servicios | Que se vea el abanico de grano. |
-| 4 | Despegue desde la camioneta o el trailer | Cómo trabajamos | Plano abierto, que se vea el equipo de apoyo. |
-| 5 | Carga del tanque | Seguridad | Con elementos de protección puestos. |
+| 4 | Despegue desde la camioneta o el trailer | En el campo | Plano abierto, que se vea el equipo de apoyo. |
+| 5 | Carga del tanque | En el campo | Con elementos de protección puestos. |
 | 6 | Baterías y generador | Tecnología | Ordenados, de día o al atardecer. |
-| 7 | Plan de vuelo en la pantalla del control | Tecnología, cómo trabajamos | Sin reflejos, con el mapa del lote visible (sin datos privados de clientes). |
+| 7 | Plan de vuelo en la pantalla del control | Precisión y control | Sin reflejos, con el mapa del lote visible (sin datos privados de clientes). |
 | 8 | Detalle de los atomizadores | Tecnología | Primer plano, puede ser con el drone en el piso. |
-| 9 | Los dos integrantes con el equipo | Quiénes somos | Mirando a cámara, el T50 detrás, luz cálida de costado. |
-| 10 | Lote terminado | Banner final | Plano abierto, sin huellas en el cultivo. |
-| 11 | **Video corto de una aplicación** (30 a 60 s) | "Mirá cómo trabajamos" | Despegue, pasada sobre el lote, vista desde el piloto. Horizontal, 1080p o 4K, sin música de fondo con derechos. |
+| 9 | Los dos integrantes con el equipo | Nosotros | Mirando a cámara, el T50 detrás, luz cálida de costado. |
+| 10 | Lote terminado | En el campo | Plano abierto, sin huellas en el cultivo. |
+| 11 | **Video corto de una aplicación** (30 a 60 s) | ¿Qué es AgroAtom? o redes (el video salió de la portada) | Despegue, pasada sobre el lote, vista desde el piloto. Horizontal, 1080p o 4K, sin música de fondo con derechos. |
 
 ---
 
@@ -231,10 +233,11 @@ Siempre a la hora dorada (amanecer o atardecer), en horizontal, con buena resolu
 
 - Nombre del titular (aviso legal).
 - Horario de atención. (WhatsApp y teléfono +54 9 3487 21-7345, email agroatom00@gmail.com e Instagram @agro.atom ya están cargados.)
-- Rol del segundo integrante, equipos de apoyo, tipo de seguro.
+- Roles de Matías y Franco (puse "Dirección y operaciones" y "Operaciones" para confirmar), equipos de apoyo, tipo de seguro.
 - Facebook (si tienen), dominio, Perfil de Empresa en Google.
 - Fotos y video propios (sección 8).
-- Hectáreas aplicadas (lugar oculto ya preparado en la franja de datos).
+- Fotos de "¿Qué es AgroAtom?", "Nosotros" y la galería "En el campo". La foto del T50 en Tecnología y en la portada es de DJI y no se puede publicar sin permiso.
+- Respuestas de las preguntas frecuentes, a confirmar.
 - Fuente del clima y confirmación de los umbrales del semáforo.
 - Formulario: llega a agroatom00@gmail.com por FormSubmit. La primera consulta manda un email de activación que hay que confirmar una sola vez.
 - Habilitación en Entre Ríos (sí o no).
