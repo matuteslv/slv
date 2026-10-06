@@ -89,7 +89,7 @@
 
   /* ---------- WhatsApp ---------- */
   const WHATSAPP = "5493487217345"; // +54 9 3487 21-7345
-  const EMAIL = "agroatomm00@gmail.com";
+  const EMAIL = "agroatom00@gmail.com";
   $$("[data-wa]").forEach((a) => {
     if (!a.href.startsWith("https://wa.me/")) {
       const que = a.dataset.servicio || "una aplicación";
