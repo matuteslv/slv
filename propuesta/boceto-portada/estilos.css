@@ -871,7 +871,11 @@ h1, h2, h3, p { margin: 0; }
 .contacto__datos li { display: grid; grid-template-columns: 24px minmax(0, 1fr); column-gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--linea); }
 .contacto__datos svg { grid-row: span 2; width: 20px; height: 20px; margin-top: 2px; color: var(--acento); }
 .contacto__datos span { font-size: 0.75rem; color: var(--texto-3); }
-.contacto__datos strong { font-weight: 600; }
+.contacto__datos strong { font-weight: 600; overflow-wrap: anywhere; }
+.contacto__datos a, .pie__col a { color: inherit; text-decoration-color: color-mix(in srgb, var(--acento) 60%, transparent); text-underline-offset: 3px; }
+.contacto__datos a:hover, .pie__col a:hover { color: var(--acento); }
+.pie__red { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; }
+.pie__red svg { width: 20px; height: 20px; color: var(--acento); }
 .form { display: grid; gap: 18px; padding: clamp(22px, 4vw, 32px); border: 1px solid var(--linea); border-radius: var(--r-l); background: var(--superficie); }
 .form h3 { font-size: 1.25rem; font-weight: 800; }
 .form__grilla { position: relative; display: grid; gap: 14px; }

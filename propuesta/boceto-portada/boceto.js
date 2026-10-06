@@ -88,12 +88,13 @@
 
 
   /* ---------- WhatsApp ---------- */
-  // [PENDIENTE] número sin + ni espacios (por ejemplo 549348...). Mientras esté vacío, los botones llevan al formulario.
-  const WHATSAPP = "";
+  const WHATSAPP = "5493487217345"; // +54 9 3487 21-7345
+  const EMAIL = "agroatomm00@gmail.com";
   $$("[data-wa]").forEach((a) => {
-    if (!WHATSAPP) return;
-    const que = a.dataset.servicio || "una aplicación";
-    a.href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(`Hola AgroAtom, quiero cotizar ${que} para ___ ha de ___ en ___`)}`;
+    if (!a.href.startsWith("https://wa.me/")) {
+      const que = a.dataset.servicio || "una aplicación";
+      a.href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(`Hola AgroAtom, quiero cotizar ${que} para ___ ha de ___ en ___`)}`;
+    }
     a.target = "_blank";
     a.rel = "noopener";
   });
@@ -149,7 +150,28 @@
         form[faltan[0]].focus();
         return avisar("Completá nombre, un teléfono con código de área y la localidad.", false);
       }
-      avisar("Este formulario es de prueba y todavía no envía mensajes [PENDIENTE: a qué email llegan]. Mientras tanto, escribinos por WhatsApp.", false);
+      const boton = $('button[type="submit"]', form);
+      const datos = Object.fromEntries(new FormData(form));
+      delete datos.web;
+      boton.disabled = true;
+      avisar("Enviando…", true);
+      const corte = new AbortController();
+      const reloj = setTimeout(() => corte.abort(), 10000);
+      // FormSubmit reenvía la consulta al email de AgroAtom (la primera vez pide confirmar la casilla)
+      fetch(`https://formsubmit.co/ajax/${EMAIL}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({ ...datos, _subject: `Consulta web: ${datos.servicio || "aplicación"} en ${datos.localidad}`, _template: "table", _captcha: "false" }),
+        signal: corte.signal,
+      })
+        .then((r) => (r.ok ? r.json() : Promise.reject(new Error(`HTTP ${r.status}`))))
+        .then((r) => {
+          if (String(r.success) !== "true") throw new Error(r.message || "sin confirmar");
+          form.reset();
+          avisar("¡Gracias! Recibimos tu consulta y te contestamos por WhatsApp o por email.", true);
+        })
+        .catch(() => avisar("No pudimos enviar el formulario. Escribinos por WhatsApp al +54 9 3487 21-7345 y te respondemos.", false))
+        .finally(() => { clearTimeout(reloj); boton.disabled = false; });
     });
   }
 

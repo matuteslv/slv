@@ -230,13 +230,13 @@ Siempre a la hora dorada (amanecer o atardecer), en horizontal, con buena resolu
 ## 9. Lista de `[PENDIENTE]` hasta ahora
 
 - Nombre del titular (aviso legal).
-- WhatsApp, teléfono, email, horario.
+- Horario de atención. (WhatsApp y teléfono +54 9 3487 21-7345, email agroatomm00@gmail.com e Instagram @agro.atom ya están cargados.)
 - Rol del segundo integrante, equipos de apoyo, tipo de seguro.
-- Redes, dominio, Perfil de Empresa en Google.
+- Facebook (si tienen), dominio, Perfil de Empresa en Google.
 - Fotos y video propios (sección 8).
 - Hectáreas aplicadas (lugar oculto ya preparado en la franja de datos).
 - Fuente del clima y confirmación de los umbrales del semáforo.
-- Destino del formulario.
+- Formulario: llega a agroatomm00@gmail.com por FormSubmit. La primera consulta manda un email de activación que hay que confirmar una sola vez.
 - Habilitación en Entre Ríos (sí o no).
 
 ## 10. Después de tu OK
